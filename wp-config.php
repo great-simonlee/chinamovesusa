@@ -26,7 +26,7 @@ if (strstr($_SERVER['SERVER_NAME'], 'chinamovesusa.local')) {
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 } else {
-	define( 'DB_NAME', 'koreamov' );
+	define( 'DB_NAME', 'koreamov_chinamovesusa' );
 	define( 'DB_USER', 'koreamov_simon' );
 	define( 'DB_PASSWORD', '123qwe' );
 	define( 'DB_HOST', '127.0.0.1' );
