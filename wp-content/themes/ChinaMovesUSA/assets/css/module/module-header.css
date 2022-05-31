@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
 .gnav-bar {
@@ -12,6 +12,11 @@
   color: #fff;
 }
 
+.gnav-title {
+  display: flex;
+  align-items: center;
+}
+
 .gnav-ul {
   display: flex;
 }
@@ -19,7 +24,7 @@
 .gnav-ul > li > a {
   font-weight: 300;
   color: #fff;
-  transition: 200ms;
+  transition: color 200ms;
 }
 
 .gnav-ul > li > a:hover {
@@ -39,6 +44,63 @@
   background-color: #f78915;
 }
 
+.main-sel-con {
+  display: flex;
+  width: 100%;
+}
+
+.main-sel-hl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 50vw;
+  background-color: #fff;
+}
+
+.main-sel-ha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50vw;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.main-rent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-rent-listing {
+  display: grid;
+  justify-content: space-between;
+}
+
+.main-rent-card {
+  position: relative;
+}
+
+.main-rent-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-rent-info {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 3;
+}
+
 /* Cell phone */
 @media (min-width: 360px) {
 }
@@ -55,12 +117,13 @@
     height: 100px;
   }
 
-  .gnav-title {
-    font-size: 24px;
+  .gnav-logo {
+    width: 300px;
+    height: 60px;
   }
 
   .gnav-ul > li {
-    margin: 0 16px;
+    margin: 32px 16px 0 16px;
     font-size: 24px;
   }
 
@@ -73,6 +136,61 @@
   .gnav-signup {
     padding: 8px 16px;
     border-radius: 12px;
+  }
+  .main-sel-hl {
+    height: 140px;
+    padding-right: 40px;
+  }
+  .main-sel-ha {
+    height: 140px;
+    padding-left: 40px;
+  }
+
+  .main-sel-title {
+    font-size: 32px;
+  }
+
+  .main-sel-subtitle {
+    font-size: 16px;
+  }
+
+  .main-rent {
+    margin-top: 36px;
+  }
+
+  .main-rent-listing {
+    width: 1412px;
+    grid-template-columns: 330px 330px 330px 330px;
+    grid-template-rows: 280px 280px 280px 280px;
+    row-gap: 20px;
+  }
+
+  .main-rent-img {
+    border-radius: 16px;
+  }
+
+  .main-rent-info {
+    width: 330px;
+    height: 100px;
+    padding: 0 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .main-rent-city {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .main-rent-term {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .main-rent-price {
+    height: 72px;
+    font-size: 24px;
+    font-weight: 700;
   }
 }
 /* Extra large devices */

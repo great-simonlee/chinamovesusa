@@ -10,7 +10,7 @@
     <body <?php body_class();?>>
     <nav class="gnav">
       <section class="gnav-bar">
-        <a href="<?php echo site_url('/') ?>" class="gnav-title"><img class="gnav-logo" src="<?php echo get_theme_file_uri('/img/logo/china moves logo(white w_ trans)_937x97.png') ?>" alt="ChinaMovesUSA"></a>
+        <a href="<?php echo site_url('/') ?>" class="gnav-title"><img class="gnav-logo" src="<?php echo get_theme_file_uri('/assets/img/logo/china moves logo(white w_ trans)_937x97.png') ?>" alt="ChinaMovesUSA"></a>
         <!-- <p class="gnav-title">CHINA MOVES USA</p> -->
         <ul class="gnav-ul">
           <li><a href="#">首页</a></li>
