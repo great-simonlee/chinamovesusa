@@ -1,0 +1,80 @@
+.gnav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.gnav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.gnav-ul {
+  display: flex;
+}
+
+.gnav-ul > li > a {
+  font-weight: 300;
+  color: #fff;
+  transition: 200ms;
+}
+
+.gnav-ul > li > a:hover {
+  color: #f78915;
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+}
+
+.login-signup > a {
+  color: #fff;
+}
+
+.gnav-signup {
+  background-color: #f78915;
+}
+
+/* Cell phone */
+@media (min-width: 360px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+  .gnav-bar {
+    width: 1412px;
+    height: 100px;
+  }
+
+  .gnav-title {
+    font-size: 24px;
+  }
+
+  .gnav-ul > li {
+    margin: 0 16px;
+    font-size: 24px;
+  }
+
+  .login-signup > a {
+    font-weight: 300;
+    margin-left: 24px;
+    font-size: 24px;
+  }
+
+  .gnav-signup {
+    padding: 8px 16px;
+    border-radius: 12px;
+  }
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}
