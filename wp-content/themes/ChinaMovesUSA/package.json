@@ -1,0 +1,29 @@
+{
+  "name": "chinamovesusa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/great-simonlee/chinamovesusa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/great-simonlee/chinamovesusa/issues"
+  },
+  "homepage": "https://github.com/great-simonlee/chinamovesusa#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "@wordpress/scripts": "*",
+    "axios": "^0.27.2",
+    "normalize.css": "^8.0.1"
+  }
+}
