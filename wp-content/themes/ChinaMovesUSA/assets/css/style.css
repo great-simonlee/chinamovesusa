@@ -6,6 +6,8 @@
 
 /* Module */
 @import './module/module-header.css';
+@import './module/module-footer.css';
 
 /* Page */
 @import './page/page-front-page.css';
+@import './page/page-rent.css';

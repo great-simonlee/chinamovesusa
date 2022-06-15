@@ -1,7 +1,38 @@
 <br>
 <br>
 <br>
-<h2>THIS IS FOOTER</h2>
+<!-- china moves logo(white w_ trans)_937x97.png -->
+<footer>
+    <section class="footer-con">
+        <div class="footer-cont-container">
+            <div class="footer-info">
+                <img class="footer-logo" src="<?php echo get_theme_file_uri('/assets/img/logo/china moves logo(white w_ trans)_937x97.png') ?>" alt="qr">
+                <p>1133 Broadway, #401, New York, NY 10010</p>
+                <p>+1 212 680 4552</p>
+                <p>hello@newyorkmovesre.com</p>
+            </div>
+            <div class="footer-list-container">
+                <ul>
+                    <li><b>关于公司</b></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li><b>其他信息</b></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">买房咨询</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer-pri">
+        <div class="footer-cont-pri">
+            <p>Copyright NEW YORK MOVES REAL ESTATE. All Rights Reserved.</p>
+            <p>版权归本网站所有</p>
+        </div>
+    </section>
+</footer>
 
         <!-- Firebase JS -->
         <!-- <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>

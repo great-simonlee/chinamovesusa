@@ -13,8 +13,8 @@
         <a href="<?php echo site_url('/') ?>" class="gnav-title"><img class="gnav-logo" src="<?php echo get_theme_file_uri('/assets/img/logo/china moves logo(white w_ trans)_937x97.png') ?>" alt="ChinaMovesUSA"></a>
         <!-- <p class="gnav-title">CHINA MOVES USA</p> -->
         <ul class="gnav-ul">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">租房</a></li>
+          <li><a href="/">首页</a></li>
+          <li><a href="/rent">租房</a></li>
           <li><a href="#">找室友</a></li>
           <li><a href="#">团队</a></li>
           <li><a href="#">关于我们</a></li>
