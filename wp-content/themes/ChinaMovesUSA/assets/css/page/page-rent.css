@@ -175,10 +175,10 @@
     width: 16px;
     height: 16px;
   }
-
+  /* 
   .rent-listing {
-    /* height: 320px; */
-  }
+    height: 320px;
+  } */
 
   .rent-listing-cont {
     display: flex;

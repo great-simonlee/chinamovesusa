@@ -1,6 +1,3 @@
-<br>
-<br>
-<br>
 <!-- china moves logo(white w_ trans)_937x97.png -->
 <footer>
     <section class="footer-con">
@@ -14,9 +11,14 @@
             <div class="footer-list-container">
                 <ul>
                     <li><b>关于公司</b></li>
-                    <li><a href="">关于我们</a></li>
+                    <li><a href="/aboutus">关于我们</a></li>
                     <li><a href="">联系我们</a></li>
-                    <li><a href="">加入我们</a></li>
+                    <li><a href="/team">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li><b>地产服务</b></li>
+                    <li><a href="/rent">租房信息</a></li>
+                    <li><a href="/roommate">室友服务</a></li>
                 </ul>
                 <ul>
                     <li><b>其他信息</b></li>

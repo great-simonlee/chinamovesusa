@@ -15,14 +15,14 @@
         <ul class="gnav-ul">
           <li><a href="/">首页</a></li>
           <li><a href="/rent">租房</a></li>
-          <li><a href="#">找室友</a></li>
-          <li><a href="#">团队</a></li>
-          <li><a href="#">关于我们</a></li>
-          <li><a href="#">发布房源</a></li>
+          <li><a href="/roommate">找室友</a></li>
+          <li><a href="/team">团队</a></li>
+          <li><a href="/aboutus">关于我们</a></li>
+          <li><a href="/register">发布房源</a></li>
         </ul>
         <div class="login-signup">
-          <a href="#">注册</a>
-          <a href="#" class="gnav-signup">登陆</a>
+          <a href="/member-login">登陆</a>
+          <a href="/member-signup" class="gnav-signup">注册</a>
         </div>
       </section>
     </nav>

@@ -360,5 +360,10 @@
     <img class="rl-pagination-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/morethan.png') ?>">
   </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php get_footer(); ?>

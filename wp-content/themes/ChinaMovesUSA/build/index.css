@@ -277,7 +277,7 @@ iMac 27"           2560x1440 */
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.9);
 }
 
 .gnav-bar {
@@ -1139,10 +1139,10 @@ footer {
     width: 16px;
     height: 16px;
   }
-
+  /* 
   .rent-listing {
-    /* height: 320px; */
-  }
+    height: 320px;
+  } */
 
   .rent-listing-cont {
     display: flex;
@@ -1256,6 +1256,630 @@ footer {
 }
 /* Extra large devices */
 @media (min-width: 1920px) {
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-member.css ***!
+  \***************************************************************************************************************/
+/* Cell phone */
+@media (min-width: 360px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+  .mBody {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 880px;
+  }
+
+  .mBody-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 880px;
+    background-color: rgb(0, 0, 0, 0.95);
+  }
+
+  .mBody-cont > h2 {
+    margin-bottom: 32px;
+    color: #fff;
+  }
+
+  .mBody-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    padding: 4px 16px;
+    margin-bottom: 32px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+  }
+
+  .mBody-info-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mBody-info-input {
+    width: 240px;
+    height: 28px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+  }
+
+  .mBody-info-input::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .mBody-info-input:-ms-input-placeholder {
+    color: #fff;
+  }
+
+  .mBody-info-input::-ms-input-placeholder {
+    color: #fff;
+  }
+
+  .mBody-info-input:focus {
+    outline: none;
+    border: none;
+  }
+
+  .mBody-ua-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mBody-ua-checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+  }
+
+  #userAgreement {
+    display: none;
+  }
+
+  .mBody-ua-checkmark {
+    border: 2px #f78915 solid;
+    border-radius: 50%;
+  }
+
+  .mBody-ua-container:hover .mBody-ua-checkmark {
+    background-color: #ccc;
+  }
+
+  #userAgreement:checked + .mBody-ua-checkmark {
+    background-image: url(images/selected.46ede75f.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+  }
+
+  .mBody-signup-btn {
+    width: 240px;
+    height: 40px;
+    margin-top: 32px;
+    padding: 4px 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f78915;
+    color: #fff;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .mBody-signup-btn:hover {
+    background-color: #fff;
+    color: #f78915;
+  }
+
+  .mBody-ban-cont {
+    position: relative;
+    width: 52%;
+    height: 880px;
+    background-color: blueviolet;
+  }
+
+  .mBody-ban-img {
+    width: 52vw;
+    height: 880px;
+    object-fit: cover;
+  }
+
+  .mBody-ban-text {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+    position: absolute;
+    color: #fff;
+    text-shadow: 2px 2px #555;
+    top: 0;
+    width: 52vw;
+    height: 880px;
+    padding-right: 56px;
+    cursor: default;
+  }
+
+  .mBody-ban-text > p {
+    font-family: lato;
+    font-size: 120px;
+    font-weight: 900;
+  }
+
+  .pw-re {
+    display: flex;
+    color: #fff;
+  }
+
+  .pw-re > a {
+    color: #fff;
+  }
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}
+
+/* DEVICE VIEWPORT
+iPhone 12 Mini      360x780
+iPhone 12 & Pro     390x844
+iPhone 12 Max       428x926
+iPad Mini           768x1024
+iPad 10.2”          810x1080
+iPad Pro 11”        834x1194
+iPad Pro 12.9”     1024x1366
+MacBook Pro 13”    1280x800
+MacBook Pro 15”    1440x900
+MacBook Pro 16”    1536x960
+iMac 27"           2560x1440 */
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-roommate.css ***!
+  \*****************************************************************************************************************/
+.rm-question-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1080px;
+  height: 300px;
+  margin: 36px 0;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.rmq-title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.rmq-subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.rmq-next-btn {
+  width: 240px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #f78915;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.rmq-next-btn:hover {
+  color: #f78915;
+  background-color: #fff;
+}
+
+.rm-desc-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.rm-desc-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 24px;
+}
+
+.rm-desc-text {
+  font-size: 24px;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-team.css ***!
+  \*************************************************************************************************************/
+.tm-banner-container {
+  position: relative;
+  width: 100%;
+  cursor: default;
+}
+
+.tm-banner-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.tm-banner-search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.tm-banner-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+}
+.tm-banner-container {
+  height: 600px;
+}
+
+.tm-banner-img {
+  height: 700px;
+}
+
+.tm-banner-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.tm-subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.tm-ot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  padding: 48px 0;
+}
+
+.tm-mb-cont {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 36px;
+}
+
+.tm-agent-cont {
+  position: relative;
+  width: 280px;
+  height: 440px;
+}
+
+.tm-agent-img {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+}
+
+.tm-agent-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 280px;
+  height: 110px;
+  bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  color: #eee;
+  background-color: #111;
+}
+
+.tm-agent-infoOne {
+  text-align: start;
+}
+
+.tm-agent-infoTwo {
+  text-align: end;
+}
+
+.tm-agent-maininfo {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.tm-agent-subinfo {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.tm-ju {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  padding: 48px 0;
+  background-color: #111;
+  color: #eee;
+}
+
+.tm-position {
+  display: flex;
+  justify-content: space-around;
+  width: 1228px;
+}
+
+.tm-position-sec > p {
+  margin: 6px 0;
+}
+
+.tm-position-submit {
+  width: 240px;
+  height: 56px;
+  border: none;
+  color: #fff;
+  background-color: #f78915;
+  border-radius: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.tm-position-submit:hover {
+  color: #f78915;
+  background-color: #fff;
+}
+
+/* Cell phone */
+@media (min-width: 360px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}
+
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-aboutus.css ***!
+  \****************************************************************************************************************/
+.au-ban-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: end;
+  color: #fff;
+  text-shadow: 2px 2px #555;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 700px;
+  padding: 80px 250px 0 0;
+  cursor: default;
+}
+
+.au-ban-text > p {
+  font-family: lato;
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.au-banner-container {
+  position: relative;
+  width: 100%;
+  cursor: default;
+}
+
+.au-banner-container {
+  height: 600px;
+}
+
+.au-banner-img {
+  height: 700px;
+}
+
+.au-banner-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.au-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.au-one-cont {
+  display: flex;
+  align-items: center;
+  width: 1214px;
+}
+
+.au-one-img {
+  border-radius: 16px;
+  margin: 20px;
+  width: 560px;
+}
+
+.au-one-text {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.au-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+  color: #fff;
+  background-color: #000;
+}
+.au-two-card {
+  position: relative;
+  width: 1214px;
+  height: 200px;
+  margin: 16px 0 24px 0;
+  color: #fff;
+}
+
+.au-two-img {
+  /* position: absolute; */
+  /* top: 0; */
+  border-radius: 16px;
+  filter: brightness(80%);
+}
+
+.au-tow-text {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 1214px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.au-two-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-register.css ***!
+  \*****************************************************************************************************************/
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-detail.css ***!
+  \***************************************************************************************************************/
+.dt-body {
+  position: relative;
+  height: 2500px;
+}
+
+.dt-cont {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+}
+
+.dt-desc-cont {
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.85);
+  border-radius: 16px;
+  padding: 36px;
+  width: 960px;
+}
+
+.dt-info-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 560px;
+  padding: 24px;
+  margin-left: 24px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255, 0.85);
+}
+
+.dt-info-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dt-info-price {
+  text-align: center;
+  width: 180px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  border-bottom: 1px #000 solid;
+}
+
+.dt-info-text {
+  display: flex;
+  width: 180px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.dt-info-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.dt-info-btn {
+  width: 180px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: 200ms;
+}
+
+.dt-info-btn:hover {
+  background-color: #f78915;
+}
+
+.dt-wallpaper {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  width: 100vw;
+  height: 2500px;
+  object-fit: cover;
 }
 
 

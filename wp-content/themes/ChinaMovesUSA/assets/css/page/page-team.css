@@ -1,0 +1,164 @@
+.tm-banner-container {
+  position: relative;
+  width: 100%;
+  cursor: default;
+}
+
+.tm-banner-img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.tm-banner-search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.tm-banner-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+}
+.tm-banner-container {
+  height: 600px;
+}
+
+.tm-banner-img {
+  height: 700px;
+}
+
+.tm-banner-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.tm-subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.tm-ot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  padding: 48px 0;
+}
+
+.tm-mb-cont {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 36px;
+}
+
+.tm-agent-cont {
+  position: relative;
+  width: 280px;
+  height: 440px;
+}
+
+.tm-agent-img {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+}
+
+.tm-agent-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 280px;
+  height: 110px;
+  bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  color: #eee;
+  background-color: #111;
+}
+
+.tm-agent-infoOne {
+  text-align: start;
+}
+
+.tm-agent-infoTwo {
+  text-align: end;
+}
+
+.tm-agent-maininfo {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.tm-agent-subinfo {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.tm-ju {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  padding: 48px 0;
+  background-color: #111;
+  color: #eee;
+}
+
+.tm-position {
+  display: flex;
+  justify-content: space-around;
+  width: 1228px;
+}
+
+.tm-position-sec > p {
+  margin: 6px 0;
+}
+
+.tm-position-submit {
+  width: 240px;
+  height: 56px;
+  border: none;
+  color: #fff;
+  background-color: #f78915;
+  border-radius: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.tm-position-submit:hover {
+  color: #f78915;
+  background-color: #fff;
+}
+
+/* Cell phone */
+@media (min-width: 360px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}

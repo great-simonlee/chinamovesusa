@@ -1,0 +1,85 @@
+.dt-body {
+  position: relative;
+  height: 2500px;
+}
+
+.dt-cont {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+}
+
+.dt-desc-cont {
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.85);
+  border-radius: 16px;
+  padding: 36px;
+  width: 960px;
+}
+
+.dt-info-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 560px;
+  padding: 24px;
+  margin-left: 24px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255, 0.85);
+}
+
+.dt-info-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dt-info-price {
+  text-align: center;
+  width: 180px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  border-bottom: 1px #000 solid;
+}
+
+.dt-info-text {
+  display: flex;
+  width: 180px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.dt-info-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.dt-info-btn {
+  width: 180px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: 200ms;
+}
+
+.dt-info-btn:hover {
+  background-color: #f78915;
+}
+
+.dt-wallpaper {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  width: 100vw;
+  height: 2500px;
+  object-fit: cover;
+}
