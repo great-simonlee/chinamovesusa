@@ -6,11 +6,11 @@
   text-align: end;
   color: #fff;
   text-shadow: 2px 2px #555;
-  top: 0;
+  top: 100px;
   right: 0;
   width: 100vw;
-  height: 700px;
-  padding: 80px 250px 0 0;
+  height: 600px;
+  padding: 0 250px 0 0;
   cursor: default;
 }
 

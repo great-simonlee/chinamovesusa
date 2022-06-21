@@ -6,22 +6,171 @@
         <h1>长岛最新1b1b房源！无中介费</h1>
         <p>收藏（0）｜浏览（0）</p>
       </div>
-      <div></div>
-      <div>
-        <h4>房源简介</h4>
-        <p></p>
+      <div class="dtd-pic-cont">
+        <img class="dtd-pic-main" src="<?php echo get_theme_file_uri('/assets/img/example/detailExample.png') ?>" alt="example">
+        <div class="dtd-pic-sub-cont">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="example">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="example">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="example">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="example">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="example">
+            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="example">
+        </div>
       </div>
-      <div>
-        <h4>房屋配置</h4>
+      <div class="dtd-content-cont">
+        <p class="dtdc-title">房源简介</p>
+        <div class="dtdc-desc">
+          <p>全新2B2B $4300-6200 超大落地窗condo级别软装 超高吊顶给你奢侈享受 室内洗烘 嵌入式空调 省空间还安静 白橡木地板配合浅色装修 超有格调 全落地窗 view没有更好只有最好 楼下地铁站 走路一分钟7/N/Q 朝南可以看见绝美曼哈顿view24hr door man ，超豪华装修 ，攀岩，自习室，泳池，健身房 一应俱全 步行3分钟可到地铁站，附近超多奶茶店，各种美食一应俱全！满足你的2B2B</p>
+        </div>
       </div>
-      <div>
-        <h4>大楼设施</h4>
+      <div class="dtd-content-cont">
+        <p class="dtdc-title">房屋配置</p>
+        <div class="dtdc-fea-cont">
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Washer.png') ?>" alt="">
+            <p>洗衣机</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Dryer.png') ?>" alt="">
+            <p>烘干机</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Dishwasher.png') ?>" alt="">
+            <p>洗碗机</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Balcony.png') ?>" alt="">
+            <p>阳台</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/AC.png') ?>" alt="">
+            <p>中央空调</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Rangehood.png') ?>" alt="">
+            <p>抽油烟机</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>房源位置</h4>
+      <div class="dtd-content-cont">
+        <p class="dtdc-title">大楼设施</p>
+        <div class="dtdc-fea-cont">
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Concierge.png') ?>" alt="">
+            <p>24h门卫</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Gym.png') ?>" alt="">
+            <p>健身房</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Lounge.png') ?>" alt="">
+            <p>Lobby</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Elevator.png') ?>" alt="">
+            <p>电梯</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/PetFriendly.png') ?>" alt="">
+            <p>宠物友好</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Garage.png') ?>" alt="">
+            <p>车库/车位</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/RooftopDeck.png') ?>" alt="">
+            <p>景观露台</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/LaundryRoom.png') ?>" alt="">
+            <p>洗衣房</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Basketball.png') ?>" alt="">
+            <p>篮球场</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/BBQ.png') ?>" alt="">
+            <p>BBQ</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Billiard.png') ?>" alt="">
+            <p>台球场</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Golf.png') ?>" alt="">
+            <p>高尔夫</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Kitchen.png') ?>" alt="">
+            <p>公用厨房</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Pool.png') ?>" alt="">
+            <p>泳池</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Tennis.png') ?>" alt="">
+            <p>网球场</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Theater.png') ?>" alt="">
+            <p>观影室</p>
+          </div>
+          <div class="dtdc-fea-card">
+            <img src="<?php echo get_theme_file_uri('/assets/img/icon/detail/white/Wifi.png') ?>" alt="">
+            <p>公共无线网</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>类似房源</h4>
+      <div class="dtd-content-cont">
+        <p class="dtdc-title">房源位置</p>
+        <div class="dtdc-desc">
+          <img class="dtdc-loc" src="<?php echo get_theme_file_uri('/assets/img/example/detailLoc.png') ?>" alt="example">
+        </div>
+      </div>
+      <div class="dtd-content-cont">
+        <p class="dtdc-title">类似房源</p>
+        <ul class="dtdc-desc">
+          <li class="dtdc-rec-listing">
+            <img src="<?php echo get_theme_file_uri('/assets/img/example/listing1.png') ?>" alt="">
+            <div>
+              <p>纽约-长岛市</p>
+              <p>$5,800</p>
+            </div>
+          </li>
+          <li class="dtdc-rec-listing">
+            <img src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="">
+            <div>
+              <p>纽约-长岛市</p>
+              <p>$5,800</p>
+            </div>
+          </li>
+          <li class="dtdc-rec-listing">
+            <img src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="">
+            <div>
+              <p>纽约-长岛市</p>
+              <p>$5,800</p>
+            </div>
+          </li>
+          <li class="dtdc-rec-listing">
+            <img src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="">
+            <div>
+              <p>纽约-长岛市</p>
+              <p>$5,800</p>
+            </div>
+          </li>
+          <li class="dtdc-rec-listing">
+            <img src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="">
+            <div>
+              <p>纽约-长岛市</p>
+              <p>$5,800</p>
+            </div>
+          </li>
+        </ul>
+        
       </div>
     </div>
     <div class="dt-info-cont">

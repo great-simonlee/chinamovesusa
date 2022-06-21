@@ -1,0 +1,51 @@
+.reg-body {
+  position: relative;
+  height: auto;
+  color: #fff;
+  cursor: default;
+}
+
+.reg-cont {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+
+.reg-main {
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px;
+  width: 1220px;
+  height: auto;
+  background-color: rgb(0, 0, 0, 0.85);
+  border-radius: 16px;
+}
+
+.reg-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 36px;
+  width: 960px;
+  border-bottom: 1px #fff solid;
+}
+
+.reg-title > p {
+  font-size: 24px;
+}
+
+.reg-loc {
+  width: 100%;
+}
+
+.reg-wallpaper {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
