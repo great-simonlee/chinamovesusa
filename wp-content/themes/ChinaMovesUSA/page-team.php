@@ -10,8 +10,8 @@
 </section>
 <img class="tm-banner-img" src="<?php echo get_theme_file_uri('/assets/img/banner/front-banner.png') ?>">  
 <section class="tm-ot">
-  <p class="main-sec-title">我们的团队</p>
-  <p class="main-sec-subtitle">OUR TEAM</p>
+  <p class="main-team-title">我们的团队</p>
+  <p class="main-team-subtitle">OUR TEAM</p>
   <div class="tm-mb-cont">
     <div class="tm-agent-cont">
       <img class="tm-agent-img" src="<?php echo get_theme_file_uri('/assets/img/agent/ken.png') ?>" alt="">
@@ -40,19 +40,6 @@
       </div>
     </div>
     <div class="tm-agent-cont">
-      <img class="tm-agent-img" src="<?php echo get_theme_file_uri('/assets/img/agent/rainie.jpg') ?>" alt="">
-      <div class="tm-agent-info">
-        <div class="tm-agent-infoOne">
-          <p class="tm-agent-maininfo">Rainie Liang</p>
-          <p class="tm-agent-subinfo">Licensed Salesperson</p>
-        </div>
-        <div class="tm-agent-infoTwo">
-          <p class="tm-agent-subinfo">(857) 222-1383</p>
-          <p class="tm-agent-subinfo">rainie@newyorkmovesre.com</p>
-        </div>
-      </div>
-    </div>
-    <div class="tm-agent-cont">
       <img class="tm-agent-img" src="<?php echo get_theme_file_uri('/assets/img/agent/cecilia.png') ?>" alt="">
       <div class="tm-agent-info">
         <div class="tm-agent-infoOne">
@@ -62,6 +49,19 @@
         <div class="tm-agent-infoTwo">
           <p class="tm-agent-subinfo">(310) 866-9551</p>
           <p class="tm-agent-subinfo">cecilia@newyorkmovesre.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="tm-agent-cont">
+      <img class="tm-agent-img" src="<?php echo get_theme_file_uri('/assets/img/agent/rainie.jpg') ?>" alt="">
+      <div class="tm-agent-info">
+        <div class="tm-agent-infoOne">
+          <p class="tm-agent-maininfo">Rainie Liang</p>
+          <p class="tm-agent-subinfo">Licensed Salesperson</p>
+        </div>
+        <div class="tm-agent-infoTwo">
+          <p class="tm-agent-subinfo">(857) 222-1383</p>
+          <p class="tm-agent-subinfo">rainie@newyorkmovesre.com</p>
         </div>
       </div>
     </div>
@@ -120,12 +120,12 @@
     <br>
   </div>
 </section>
-<section class="tm-ju">
-  <p class="main-sec-title">加入我们</p>
-  <p class="main-sec-subtitle">JOIN US</p>
+<section class="tm-ju tm-redu">
+  <p class="main-team-title">加入我们</p>
+  <p class="main-team-subtitle">JOIN US</p>
   <br>
   <div class="tm-position">
-    <div class="tm-position-sec">
+    <div class="tm-position-sec tm-position-left">
       <h3>房产经纪人&nbsp;｜&nbsp;Real Estate Salesperson</h3>
       <br>
       <p>工作性质：全职/兼职</p>
@@ -149,9 +149,9 @@
       <p>&nbsp;&nbsp;熟练掌握应用办公软件</p>
       <p>&nbsp;&nbsp;有摄影特长并熟练使用后期处理软件者优先 </p>
       <p>&nbsp;&nbsp;具备在美合法工作身份（可提供cpt/opt认证）</p>
-      <br><br>
+      
     </div>
-    <div>
+    <div class="tm-position-sec tm-position-right">
       <h3>市场助理&nbsp;｜&nbsp;Marketing Assistant</h3>
       <br>
       <p>工作性质：全职/兼职</p>
@@ -172,11 +172,11 @@
       <br><br>
     </div>
   </div>
-  <br>
+  <br><br><br>
   <button class="tm-position-submit">点击申请</button>
   <br>
 </section>
-<section class="main-contact">
+<section class="main-contact tm-redu">
   <div class="main-con-container">
     <div class="main-con-card">
       <div>
@@ -205,4 +205,17 @@
     </div>
   </div>
 </section>
+<div class="m-footer">
+  <div class="mf-menu-item">
+    <img class="mf-menu-home" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-home.png') ?>" alt="ChinaMovesUSA">
+    <p>首页</p>
+  </div>
+  <div class="mf-menu-item ft-more">
+    <img class="mf-menu-more" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-more.png') ?>" alt="ChinaMovesUSA">
+  </div>
+  <div class="mf-menu-item">      
+    <img class="mf-menu-home" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-my.png') ?>" alt="ChinaMovesUSA">
+    <p>我的</p>
+  </div>
+</div>
 <?php get_footer(); ?>

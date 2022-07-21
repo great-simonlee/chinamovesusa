@@ -12,8 +12,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/css/style.css */ "./assets/css/style.css");
 /* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/modules/genListing.js */ "./src/modules/genListing.js");
 /* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/modules/mobile/mobile.js */ "./src/modules/mobile/mobile.js");
+/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_2__);
 // CSS
  // JS
+
 
 
 
@@ -27,6 +30,23 @@ __webpack_require__.r(__webpack_exports__);
 
 if (window.location.pathname.includes('genlisting')) {
   console.log(' THIS IS THE PLACE');
+}
+
+/***/ }),
+
+/***/ "./src/modules/mobile/mobile.js":
+/*!**************************************!*\
+  !*** ./src/modules/mobile/mobile.js ***!
+  \**************************************/
+/***/ (function() {
+
+if (window.location.pathname.includes('mobile')) {
+  setTimeout(() => {
+    const hder = document.querySelector('#gnav');
+    const fter = document.querySelector('#gfter');
+    hder.style.display = 'none';
+    fter.style.display = 'none';
+  }, 10);
 }
 
 /***/ }),

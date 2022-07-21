@@ -45,13 +45,85 @@
 }
 
 /* Cell phone */
-@media (min-width: 360px) {
+@media (min-width: 200px) {
+  .gnav {
+    display: none;
+  }
+
+  .m-header {
+    display: block;
+  }
 }
 /* Tablets */
 @media (min-width: 768px) {
+  .gnav {
+    display: flex;
+  }
+
+  .m-header {
+    display: none;
+  }
+  .gnav-bar {
+    width: 90vw;
+    height: 100px;
+  }
+
+  .gnav-logo {
+    width: 240px;
+    height: 48px;
+  }
+
+  .gnav-ul {
+    display: flex;
+  }
+
+  .login-signup {
+    display: flex;
+  }
+
+  .gnav-ul > li {
+    margin: 8px 12px 0 12px;
+    font-size: 12px;
+  }
+
+  .login-signup > a {
+    font-weight: 300;
+    margin-left: 12px;
+    font-size: 12px;
+  }
+
+  .gnav-signup {
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
 }
 /* MacBook Pro */
 @media (min-width: 1024px) {
+  .gnav-bar {
+    width: 90vw;
+    height: 100px;
+  }
+
+  .gnav-logo {
+    width: 240px;
+    height: 48px;
+  }
+
+  .gnav-ul > li {
+    margin: 16px 12px 0 12px;
+    font-size: 18px;
+  }
+
+  .login-signup > a {
+    font-weight: 300;
+    margin-left: 24px;
+    font-size: 18px;
+  }
+
+  .gnav-signup {
+    padding: 4 168;
+    border-radius: 12px;
+  }
 }
 /* Extra large devices */
 @media (min-width: 1440px) {

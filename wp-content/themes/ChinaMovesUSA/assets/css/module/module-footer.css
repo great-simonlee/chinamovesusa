@@ -34,13 +34,136 @@ footer {
 }
 
 /* Cell phone */
-@media (min-width: 360px) {
+@media (min-width: 200px) {
+  #gfter {
+    display: none;
+  }
 }
 /* Tablets */
 @media (min-width: 768px) {
+  #gfter {
+    display: block;
+  }
+
+  .footer-con {
+    width: 100vw;
+    padding: 48px 0;
+  }
+
+  .footer-cont-container {
+    width: 680px;
+  }
+
+  .footer-info > p {
+    margin: 12px 8px;
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    width: 240px;
+    height: 48px;
+  }
+
+  .footer-list-container {
+    padding: 0;
+  }
+
+  .footer-list-container > ul {
+    margin-left: 24px;
+  }
+
+  .footer-list-container > ul > li {
+    margin-bottom: 12px;
+  }
+
+  .footer-list-container > ul > li > b {
+    font-size: 12px;
+  }
+
+  .footer-list-container > ul > li > a {
+    font-size: 10px;
+    font-weight: 200;
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .footer-list-container > ul > li > a:hover {
+    color: #f78915;
+  }
+
+  .footer-pri {
+    width: 100vw;
+    height: 48px;
+  }
+
+  .footer-cont-pri {
+    width: 680px;
+  }
+
+  .footer-cont-pri > p {
+    font-size: 12px;
+  }
 }
 /* MacBook Pro */
 @media (min-width: 1024px) {
+  .footer-con {
+    width: 100vw;
+    padding: 48px 0;
+  }
+
+  .footer-cont-container {
+    width: 90vw;
+  }
+
+  .footer-info > p {
+    margin: 12px 8px;
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    width: 400px;
+    height: auto;
+  }
+
+  .footer-list-container {
+    padding: 20px 0;
+  }
+
+  .footer-list-container > ul {
+    margin-left: 64px;
+  }
+
+  .footer-list-container > ul > li {
+    margin-bottom: 24px;
+  }
+
+  .footer-list-container > ul > li > b {
+    font-size: 20px;
+  }
+
+  .footer-list-container > ul > li > a {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .footer-list-container > ul > li > a:hover {
+    color: #f78915;
+  }
+
+  .footer-pri {
+    width: 100vw;
+    height: 48px;
+  }
+
+  .footer-cont-pri {
+    width: 90vw;
+  }
+
+  .footer-cont-pri > p {
+    font-size: 16px;
+  }
 }
 /* Extra large devices */
 @media (min-width: 1440px) {

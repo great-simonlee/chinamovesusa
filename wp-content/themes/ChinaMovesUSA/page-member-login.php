@@ -27,7 +27,11 @@
       <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <a href="">忘记密码？</a>
     </div>
-    <button class="mBody-signup-btn">注册</button>
+    <div class="mBody-info m-google-login">
+      <img class="mBody-info-icon" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-google.png') ?>">  
+      <p class="mBody-google">Google 登陆</p>
+    </div>
+    <button class="mBody-signup-btn">登陆</button>
   </div>
   <div class="mBody-ban-cont">
     <img class="mBody-ban-img" src="<?php echo get_theme_file_uri('/assets/img/banner/member-banner.jpg') ?>" alt="">

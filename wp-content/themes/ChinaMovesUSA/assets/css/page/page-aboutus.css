@@ -1,93 +1,57 @@
 .au-ban-text {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: end;
   text-align: end;
-  color: #fff;
-  text-shadow: 2px 2px #555;
-  top: 100px;
-  right: 0;
-  width: 100vw;
-  height: 600px;
-  padding: 0 250px 0 0;
+  color: rgb(255, 255, 255, 0.5);
   cursor: default;
+  width: 100vw;
 }
 
 .au-ban-text > p {
   font-family: lato;
-  font-size: 120px;
   font-weight: 900;
 }
 
 .au-banner-container {
-  position: relative;
   width: 100%;
   cursor: default;
 }
 
-.au-banner-container {
-  height: 600px;
-}
-
-.au-banner-img {
-  height: 700px;
-}
-
 .au-banner-img {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   top: 0;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(60%);
+  filter: brightness(80%);
 }
 
 .au-one {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0;
 }
 
 .au-one-cont {
   display: flex;
   align-items: center;
-  width: 1214px;
-}
-
-.au-one-img {
-  border-radius: 16px;
-  margin: 20px;
-  width: 560px;
-}
-
-.au-one-text {
-  padding: 20px;
-  font-size: 20px;
-  line-height: 2;
 }
 
 .au-two {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0;
   color: #fff;
   background-color: #000;
 }
 .au-two-card {
   position: relative;
-  width: 1214px;
-  height: 200px;
-  margin: 16px 0 24px 0;
   color: #fff;
 }
 
 .au-two-img {
-  /* position: absolute; */
-  /* top: 0; */
-  border-radius: 16px;
   filter: brightness(80%);
 }
 
@@ -95,15 +59,447 @@
   position: absolute;
   display: flex;
   top: 0;
-  width: 1214px;
-  height: 200px;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
 }
 
-.au-two-icon {
-  width: 32px;
-  height: 32px;
-  margin-right: 16px;
+/* Cell phone */
+@media (min-width: 200px) {
+  .au-shadow {
+    color: rgb(247, 137, 21, 0.8);
+    text-shadow: -2px 2px rgb(247, 137, 21, 0.5);
+    text-shadow: -2px 2px rgb(247, 137, 21, 0.5);
+  }
+  .au-ban-text {
+    height: 180px;
+  }
+
+  .au-banner-img {
+    width: 100vw;
+    height: 180px;
+  }
+
+  .au-ban-text > p {
+    font-size: 32px;
+    margin-right: 18px;
+  }
+
+  .au-one {
+    /* padding: 50vw 0 10vw 0; */
+  }
+
+  .au-one-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .main-aboutus-title {
+    width: 100vw;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #f9f9f9;
+  }
+
+  .main-aboutus-subtitle {
+    width: 100vw;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+    color: #c9c9c9;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .au-one-text {
+    padding: 24px;
+    line-height: 2;
+  }
+
+  .au-one-img {
+    border-radius: 8px;
+    margin: 0 24px;
+    width: 90vw;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .au-one-text-mobile {
+    display: flex;
+  }
+
+  .au-one-text-lt {
+    display: none;
+  }
+
+  .au-ju {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 24px;
+    margin-top: 24px;
+  }
+
+  .au-ju-title {
+    font-size: 12px;
+  }
+
+  .au-ju-subtitle {
+    font-size: 12px;
+    color: #c4c4c4;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .aj-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .aj-position > hr {
+    width: 90vw;
+    height: 0.5px;
+    background-color: #fff;
+    border: none;
+  }
+
+  .aj-position-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .aj-position-sec {
+    width: 80vw;
+  }
+
+  .aj-position-sec > p {
+    font-weight: 100;
+    font-size: 10px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+  }
+
+  .ajp-txt-title {
+    padding-left: 20px;
+  }
+
+  .ajp-txt-con {
+    padding-left: 68px;
+  }
+
+  .aj-submit {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #f68915;
+    color: #fff;
+  }
+
+  .au-two {
+    display: none;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .au-shadow {
+    color: rgb(247, 137, 21, 0.5);
+    text-shadow: 8px -8px rgb(247, 137, 21, 0.8);
+  }
+  .au-ju {
+    display: none;
+  }
+
+  .m-footer {
+    display: none;
+  }
+  .main-aboutus-title {
+    font-size: 20px;
+  }
+
+  .main-aboutus-subtitle {
+    font-size: 16px;
+    color: #c9c9c9;
+  }
+  .au-ban-text {
+    top: 100px;
+    right: 0;
+    height: 400px;
+    padding: 0 80px 0 0;
+  }
+
+  .au-ban-text > p {
+    font-size: 64px;
+  }
+
+  .au-banner-container {
+    height: 400px;
+  }
+
+  .au-banner-img {
+    height: 500px;
+  }
+
+  .au-one {
+    padding: 64px 0;
+  }
+
+  .au-one-cont {
+    width: 86vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+  }
+
+  .au-one-img {
+    border-radius: 16px;
+    margin: 20px;
+    width: 40vw;
+  }
+
+  .au-one-text {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .main-aboutus-title {
+    font-size: 16px;
+  }
+
+  .main-aboutus-subtitle {
+    font-size: 12px;
+  }
+
+  .au-one-text-mobile {
+    display: none;
+  }
+
+  .au-one-text-lt {
+    display: block;
+  }
+
+  .au-two {
+    display: flex;
+    padding: 64px 0;
+  }
+  .au-two-card {
+    width: 86vw;
+    height: 160px;
+    margin: 16px 0 24px 0;
+  }
+
+  .au-two-img {
+    width: 86vw;
+    height: 160px;
+    border-radius: 16px;
+  }
+
+  .au-tow-text {
+    width: 86vw;
+    height: 160px;
+    font-size: 12px;
+  }
+
+  .au-two-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+  .main-aboutus-title {
+    font-size: 20px;
+  }
+
+  .main-aboutus-subtitle {
+    font-size: 16px;
+    color: #c9c9c9;
+  }
+  .au-ban-text {
+    top: 100px;
+    right: 0;
+    height: 500px;
+    padding: 0 80px 0 0;
+  }
+
+  .au-ban-text > p {
+    font-size: 80px;
+  }
+
+  .au-banner-container {
+    height: 500px;
+  }
+
+  .au-banner-img {
+    height: 600px;
+  }
+
+  .au-one {
+    padding: 64px 0;
+  }
+
+  .au-one-cont {
+    width: 86vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+  }
+
+  .au-one-img {
+    border-radius: 16px;
+    margin: 20px;
+    width: 40vw;
+  }
+
+  .au-one-text {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .main-aboutus-title {
+    font-size: 24px;
+  }
+
+  .main-aboutus-subtitle {
+    font-size: 16px;
+  }
+
+  .au-one-text-mobile {
+    display: none;
+  }
+
+  .au-one-text-lt {
+    display: block;
+  }
+
+  .au-two {
+    display: flex;
+    padding: 64px 0;
+  }
+  .au-two-card {
+    width: 86vw;
+    height: 160px;
+    margin: 16px 0 24px 0;
+  }
+
+  .au-two-img {
+    width: 86vw;
+    height: 160px;
+    border-radius: 16px;
+  }
+
+  .au-tow-text {
+    width: 86vw;
+    height: 160px;
+    font-size: 16px;
+  }
+
+  .au-two-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+  .au-ban-text {
+    top: 100px;
+    right: 0;
+    height: 600px;
+    padding: 0 120px 0 0;
+  }
+
+  .au-ban-text > p {
+    font-size: 120px;
+  }
+
+  .au-banner-container {
+    height: 600px;
+  }
+
+  .au-banner-img {
+    height: 700px;
+  }
+
+  .au-one {
+    padding: 64px 0;
+  }
+
+  .au-one-cont {
+    width: 1214px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  }
+
+  .au-one-img {
+    border-radius: 16px;
+    margin: 20px;
+    width: 560px;
+  }
+
+  .au-one-text {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .main-aboutus-title {
+    font-size: 24px;
+  }
+
+  .main-aboutus-subtitle {
+    font-size: 20px;
+  }
+
+  .au-one-text-mobile {
+    display: none;
+  }
+
+  .au-one-text-lt {
+    display: block;
+  }
+
+  .au-two {
+    display: flex;
+    padding: 64px 0;
+  }
+  .au-two-card {
+    width: 86vw;
+    height: 240px;
+    margin: 16px 0 24px 0;
+  }
+
+  .au-two-img {
+    width: 86vw;
+    height: 240px;
+    border-radius: 16px;
+  }
+
+  .au-tow-text {
+    width: 86vw;
+    height: 240px;
+    font-size: 24px;
+  }
+
+  .au-two-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
 }

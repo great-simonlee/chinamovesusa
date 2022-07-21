@@ -113,7 +113,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing1.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -124,7 +124,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -135,7 +135,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -146,7 +146,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -157,7 +157,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -168,7 +168,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -179,7 +179,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -190,7 +190,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing8.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -201,14 +201,14 @@
   <button class="main-rent-more-btn">查看所有房源 &#160;	<span class="more-btn-spe">&rsaquo;</span></button>
 </section>
 <section class="main-short">
-  <p class="main-sec-title">短租房源</p>
-  <p class="main-sec-subtitle">SUBLET LISTINGS</p>
+  <p class="main-front-title">短租房源</p>
+  <p class="main-front-subtitle">SUBLET LISTINGS</p>
   <div class="main-rent-listing">
     <div class="main-rent-card">
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing1.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -219,7 +219,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -230,7 +230,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -241,7 +241,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -252,7 +252,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -263,7 +263,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -274,7 +274,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -285,7 +285,7 @@
       <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing8.png') ?>" alt="rentExample">
       <div class="main-rent-info">
         <div>
-          <p>LIC超值1b1b房源</p>
+          <p class="main-rent-title">LIC超值1b1b房源</p>
           <p class="main-rent-city">纽约-长岛市</p>
           <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
         </div>
@@ -296,8 +296,8 @@
   <button class="main-short-more-btn">更多短租房源 &#160;	<span class="more-btn-spe">&rsaquo;</span></button>
 </section>
 <section class="main-rm">
-  <p class="main-sec-title">找室友/找合租</p>
-  <p class="main-sec-subtitle">ROOMMATE</p>
+  <p class="main-front-title">找室友/找合租</p>
+  <p class="main-front-subtitle">ROOMMATE</p>
   <div class="main-rm-banner">
     <div class="main-rm-txt">
       <p>想找志同道合的人一起合租？</p>
@@ -331,7 +331,7 @@
       <label for="">微信：</label>
       <input type="text">
       <label for="">其他信息：</label>
-      <textarea name="" id="" cols="30" rows="10" placeholder="例如：房型，预算，入住时间等。"></textarea>
+      <textarea name="" id="" placeholder="例如：房型，预算，入住时间等。"></textarea>
       <button class="main-con-submit">提交</button>
     </div>
   </div>

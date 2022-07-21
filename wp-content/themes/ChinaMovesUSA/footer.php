@@ -1,5 +1,5 @@
 <!-- china moves logo(white w_ trans)_937x97.png -->
-<footer>
+<footer id="gfter">
     <section class="footer-con">
         <div class="footer-cont-container">
             <div class="footer-info">

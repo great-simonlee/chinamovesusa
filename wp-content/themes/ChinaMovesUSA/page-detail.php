@@ -4,17 +4,45 @@
     <div class="dt-desc-cont">
       <div>
         <h1>长岛最新1b1b房源！无中介费</h1>
-        <p>收藏（0）｜浏览（0）</p>
+        <p><img class="dtd-bm-icon" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-bm-blank.png') ?>" alt="bookmark">收藏（0）｜<img class="dtd-bm-icon" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-view.png') ?>" alt="bookmark">浏览（0）</p>
       </div>
-      <div class="dtd-pic-cont">
-        <img class="dtd-pic-main" src="<?php echo get_theme_file_uri('/assets/img/example/detailExample.png') ?>" alt="example">
-        <div class="dtd-pic-sub-cont">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="example">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="example">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="example">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="example">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="example">
-            <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="example">
+      <div class="dtd-ml-display">
+        <div class="dtd-pic-cont">
+          <img class="dtd-pic-main" src="<?php echo get_theme_file_uri('/assets/img/example/detailExample.png') ?>" alt="example">
+          <div class="dtd-pic-sub-cont">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="example">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="example">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="example">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="example">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="example">
+              <img class="dtd-pic-sub" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="example">
+          </div>
+        </div>
+        <div class="dt-info-mob-cont" >
+          <div class="dt-info-mob-text-box">
+            <p class="dt-info-mob-price">$4,800/月</p>
+            <div class="dt-info-mob-text">
+              <img class="dt-info-mob-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/marker.png') ?>" alt="">
+              <p>4545 Center Blvd, Long Island City, NY 11101</p>
+            </div>
+            <div class="dt-info-mob-text">
+              <img class="dt-info-mob-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/bed.png') ?>" alt="">
+              <p>1 室</p>
+            </div>
+            <div class="dt-info-mob-text">
+              <img class="dt-info-mob-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/bath.png') ?>" alt="">
+              <p>1 卫</p>
+            </div>
+            <div class="dt-info-mob-text">
+              <img class="dt-info-mob-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/calendar.png') ?>" alt="">
+              <p>入住时间：6 月</p>
+            </div>
+            <div class="dt-info-mob-text">
+              <img class="dt-info-mob-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/length.png') ?>" alt="">
+              <p>租期：1 年</p>
+            </div>
+          </div>
+          <button class="dt-info-btn">现在联系</button>
         </div>
       </div>
       <div class="dtd-content-cont">
@@ -131,7 +159,7 @@
           <img class="dtdc-loc" src="<?php echo get_theme_file_uri('/assets/img/example/detailLoc.png') ?>" alt="example">
         </div>
       </div>
-      <div class="dtd-content-cont">
+      <div class="dtd-content-cont" style="display: none;">
         <p class="dtdc-title">类似房源</p>
         <ul class="dtdc-desc">
           <li class="dtdc-rec-listing">
@@ -173,7 +201,7 @@
         
       </div>
     </div>
-    <div class="dt-info-cont">
+    <div class="dt-info-cont" >
       <div class="dt-info-text-box">
         <p class="dt-info-price">$4,800/月</p>
         <div class="dt-info-text">
@@ -202,4 +230,17 @@
   </div>
   <img class="dt-wallpaper" src="<?php echo get_theme_file_uri('/assets/img/banner/member-banner.jpg') ?>">
 </section>
+<div class="m-footer">
+  <div class="mf-menu-item">
+    <img class="mf-menu-home" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-home.png') ?>" alt="ChinaMovesUSA">
+    <p>首页</p>
+  </div>
+  <div class="mf-menu-item ft-more">
+    <img class="mf-menu-more" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-more.png') ?>" alt="ChinaMovesUSA">
+  </div>
+  <div class="mf-menu-item">      
+    <img class="mf-menu-home" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-footer-my.png') ?>" alt="ChinaMovesUSA">
+    <p>我的</p>
+  </div>
+</div>
 <?php get_footer(); ?>
