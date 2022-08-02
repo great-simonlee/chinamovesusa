@@ -24,6 +24,7 @@
     "@glidejs/glide": "^3.5.2",
     "@wordpress/scripts": "*",
     "axios": "^0.27.2",
+    "googleapis": "^39.2.0",
     "normalize.css": "^8.0.1"
   }
 }

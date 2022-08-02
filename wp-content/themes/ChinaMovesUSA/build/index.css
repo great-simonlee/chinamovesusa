@@ -371,6 +371,52 @@ iMac 27"           2560x1440 */
     padding: 4px 8px;
     border-radius: 12px;
   }
+
+  .user-menu-cont {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .user-menu {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .dd-menu-cont {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(96px);
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 120px;
+    padding: 8px 16px;
+    z-index: 10;
+  }
+
+  .dd-menu-item {
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .dd-menu-item:hover {
+    color: #f78915;
+  }
+
+  .dd-menu-item > a {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .dd-menu-item > a:hover {
+    color: #f78915;
+  }
 }
 /* MacBook Pro */
 @media (min-width: 1024px) {
@@ -399,6 +445,14 @@ iMac 27"           2560x1440 */
     padding: 4 168;
     border-radius: 12px;
   }
+  .user-menu-cont {
+    width: 30px;
+  }
+
+  .user-menu {
+    width: 30px;
+    height: 30px;
+  }
 }
 /* Extra large devices */
 @media (min-width: 1440px) {
@@ -426,6 +480,52 @@ iMac 27"           2560x1440 */
   .gnav-signup {
     padding: 8px 16px;
     border-radius: 12px;
+  }
+
+  .user-menu-cont {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .user-menu {
+    position: relative;
+    width: 36px;
+    height: 36px;
+  }
+
+  .dd-menu-cont {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(96px);
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 120px;
+    padding: 8px 16px;
+    z-index: 10;
+  }
+
+  .dd-menu-item {
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .dd-menu-item:hover {
+    color: #f78915;
+  }
+
+  .dd-menu-item > a {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .dd-menu-item > a:hover {
+    color: #f78915;
   }
 }
 /* Extra large devices */
@@ -4105,7 +4205,7 @@ iMac 27"           2560x1440 */
 .au-banner-img {
   position: absolute;
   width: 100vw;
-  top: 0;
+  top: -100px;
   object-fit: cover;
   z-index: -1;
   filter: brightness(80%);
@@ -4305,23 +4405,29 @@ iMac 27"           2560x1440 */
   .m-footer {
     display: none;
   }
+
   .main-aboutus-title {
     font-size: 20px;
+    background-color: transparent;
   }
 
   .main-aboutus-subtitle {
+    background-color: transparent;
     font-size: 16px;
     color: #c9c9c9;
+    margin-bottom: 24px;
   }
+
   .au-ban-text {
-    top: 100px;
+    /* top: 100px; */
     right: 0;
     height: 400px;
-    padding: 0 80px 0 0;
+    /* padding: 0 80px 0 0; */
   }
 
   .au-ban-text > p {
     font-size: 64px;
+    margin-right: 64px;
   }
 
   .au-banner-container {
@@ -4333,7 +4439,7 @@ iMac 27"           2560x1440 */
   }
 
   .au-one {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   .au-one-cont {
@@ -4373,7 +4479,7 @@ iMac 27"           2560x1440 */
 
   .au-two {
     display: flex;
-    padding: 64px 0;
+    padding: 16px 0 64px 0;
   }
   .au-two-card {
     width: 86vw;
@@ -4410,14 +4516,15 @@ iMac 27"           2560x1440 */
     color: #c9c9c9;
   }
   .au-ban-text {
-    top: 100px;
+    /* top: 100px; */
     right: 0;
     height: 500px;
-    padding: 0 80px 0 0;
+    /* padding: 0 80px 0 0; */
   }
 
   .au-ban-text > p {
     font-size: 80px;
+    margin-right: 96px;
   }
 
   .au-banner-container {
@@ -4429,7 +4536,7 @@ iMac 27"           2560x1440 */
   }
 
   .au-one {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   .au-one-cont {
@@ -4498,14 +4605,15 @@ iMac 27"           2560x1440 */
 /* Extra large devices */
 @media (min-width: 1440px) {
   .au-ban-text {
-    top: 100px;
+    /* top: 100px; */
     right: 0;
     height: 600px;
-    padding: 0 120px 0 0;
+    /* padding: 0 120px 0 0; */
   }
 
   .au-ban-text > p {
     font-size: 120px;
+    margin-right: 200px;
   }
 
   .au-banner-container {
@@ -4517,7 +4625,7 @@ iMac 27"           2560x1440 */
   }
 
   .au-one {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   .au-one-cont {
@@ -4545,6 +4653,7 @@ iMac 27"           2560x1440 */
 
   .main-aboutus-subtitle {
     font-size: 20px;
+    margin-bottom: 48px;
   }
 
   .au-one-text-mobile {
@@ -4560,21 +4669,21 @@ iMac 27"           2560x1440 */
     padding: 64px 0;
   }
   .au-two-card {
-    width: 86vw;
+    width: 1214px;
     height: 240px;
     margin: 16px 0 24px 0;
   }
 
   .au-two-img {
-    width: 86vw;
+    width: 1214px;
     height: 240px;
     border-radius: 16px;
   }
 
   .au-tow-text {
-    width: 86vw;
+    width: 1214px;
     height: 240px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .au-two-icon {
@@ -4780,6 +4889,22 @@ iMac 27"           2560x1440 */
   object-fit: cover;
 }
 
+.input-files {
+  font-weight: 300;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.input-files:hover {
+  background-color: #f68915;
+  color: #fff;
+}
+
+.preview-container {
+  display: grid;
+  justify-content: space-between;
+}
+
 .text-unit {
   display: flex;
   align-items: center;
@@ -4790,6 +4915,7 @@ iMac 27"           2560x1440 */
   background-color: #fff;
   color: #000;
   display: flex;
+  cursor: pointer;
 }
 
 /* Cell phone */
@@ -5698,6 +5824,12 @@ iMac 27"           2560x1440 */
     gap: 20px;
   }
 
+  .input-files {
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+  }
+
   .text-unit {
     width: 96px;
     height: 96px;
@@ -5759,6 +5891,19 @@ iMac 27"           2560x1440 */
     font-size: 16px;
     font-weight: 100;
     margin-left: 160px;
+  }
+
+  .reg-mapbox {
+    width: 100%;
+    height: 480px;
+    margin: 0 0 48px 0;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .preview-container {
+    width: 560px;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
   }
 }
 /* Extra large devices */
@@ -6682,6 +6827,168 @@ iMac 27"           2560x1440 */
   .m-footer {
     display: none;
   }
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-mypage.css ***!
+  \***************************************************************************************************************/
+.mypage-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+
+.mypage-category {
+  width: 100px;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: calc(50% - 612px);
+  transform: translate(0, -50%);
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.mpcat-item {
+  padding: 24px 0;
+  cursor: pointer;
+}
+
+.mypage-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 680px;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 24px;
+  color: #fff;
+}
+
+.mypage-avatar {
+  width: 148px;
+  height: 148px;
+  margin-bottom: 32px;
+}
+
+.mypage-input-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  margin: 20px 0;
+}
+
+.mypage-input {
+  width: 440px;
+  height: 36px;
+  border: none;
+  padding: 0 18px;
+  border-radius: 18px;
+}
+
+.mypage-input:focus {
+  border: none;
+  outline: none;
+}
+
+.mypage-submit-btn {
+  width: 64px;
+  height: 32px;
+  margin-top: 48px;
+  background-color: #f78915;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.listing-section {
+  justify-content: start;
+  padding: 32px;
+}
+
+.myp-lising-card {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.myp-card-left {
+  position: relative;
+}
+
+.myp-card-img {
+  width: 360px;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.myp-card-img-desc {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 12px 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.myp-card-type > p {
+  margin: 2px 0;
+}
+
+.myp-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 580px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #fff;
+  color: #000;
+}
+
+.myp-card-detail > p {
+  margin-top: 6px;
+}
+
+.mp-wallpaper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -5;
+}
+
+/* Cell phone */
+@media (min-width: 200px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
 }
 /* MacBook Pro */
 @media (min-width: 1024px) {

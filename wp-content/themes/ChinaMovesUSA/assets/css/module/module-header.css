@@ -96,6 +96,52 @@
     padding: 4px 8px;
     border-radius: 12px;
   }
+
+  .user-menu-cont {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .user-menu {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .dd-menu-cont {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(96px);
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 120px;
+    padding: 8px 16px;
+    z-index: 10;
+  }
+
+  .dd-menu-item {
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .dd-menu-item:hover {
+    color: #f78915;
+  }
+
+  .dd-menu-item > a {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .dd-menu-item > a:hover {
+    color: #f78915;
+  }
 }
 /* MacBook Pro */
 @media (min-width: 1024px) {
@@ -124,6 +170,14 @@
     padding: 4 168;
     border-radius: 12px;
   }
+  .user-menu-cont {
+    width: 30px;
+  }
+
+  .user-menu {
+    width: 30px;
+    height: 30px;
+  }
 }
 /* Extra large devices */
 @media (min-width: 1440px) {
@@ -151,6 +205,52 @@
   .gnav-signup {
     padding: 8px 16px;
     border-radius: 12px;
+  }
+
+  .user-menu-cont {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .user-menu {
+    position: relative;
+    width: 36px;
+    height: 36px;
+  }
+
+  .dd-menu-cont {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(96px);
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 120px;
+    padding: 8px 16px;
+    z-index: 10;
+  }
+
+  .dd-menu-item {
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+  .dd-menu-item:hover {
+    color: #f78915;
+  }
+
+  .dd-menu-item > a {
+    color: #fff;
+    transition: 200ms;
+  }
+
+  .dd-menu-item > a:hover {
+    color: #f78915;
   }
 }
 /* Extra large devices */

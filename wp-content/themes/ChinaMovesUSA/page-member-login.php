@@ -8,11 +8,11 @@
     </div> -->
     <div class="mBody-info">
       <img class="mBody-info-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/email.png') ?>">  
-      <input class="mBody-info-input" type="email" placeholder="邮箱">
+      <input class="mBody-info-input" id="logInEmail" type="email" placeholder="邮箱">
     </div>
     <div class="mBody-info">
       <img class="mBody-info-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/lock.png') ?>">  
-      <input class="mBody-info-input" type="password" placeholder="密码">
+      <input class="mBody-info-input" id="logInPassword" type="password" placeholder="密码">
     </div>
     <!-- <div class="mBody-info">
       <img class="mBody-info-icon" src="<?php echo get_theme_file_uri('/assets/img/icon/lock.png') ?>">  
@@ -31,7 +31,7 @@
       <img class="mBody-info-icon" src="<?php echo get_theme_file_uri('/assets/img/mobile/m-google.png') ?>">  
       <p class="mBody-google">Google 登陆</p>
     </div>
-    <button class="mBody-signup-btn">登陆</button>
+    <button class="mBody-signup-btn" id="logInBtn">登陆</button>
   </div>
   <div class="mBody-ban-cont">
     <img class="mBody-ban-img" src="<?php echo get_theme_file_uri('/assets/img/banner/member-banner.jpg') ?>" alt="">

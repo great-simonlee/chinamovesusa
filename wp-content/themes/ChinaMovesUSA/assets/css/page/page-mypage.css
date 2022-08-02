@@ -1,0 +1,158 @@
+.mypage-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+
+.mypage-category {
+  width: 100px;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: calc(50% - 612px);
+  transform: translate(0, -50%);
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.mpcat-item {
+  padding: 24px 0;
+  cursor: pointer;
+}
+
+.mypage-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 680px;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 24px;
+  color: #fff;
+}
+
+.mypage-avatar {
+  width: 148px;
+  height: 148px;
+  margin-bottom: 32px;
+}
+
+.mypage-input-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  margin: 20px 0;
+}
+
+.mypage-input {
+  width: 440px;
+  height: 36px;
+  border: none;
+  padding: 0 18px;
+  border-radius: 18px;
+}
+
+.mypage-input:focus {
+  border: none;
+  outline: none;
+}
+
+.mypage-submit-btn {
+  width: 64px;
+  height: 32px;
+  margin-top: 48px;
+  background-color: #f78915;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.listing-section {
+  justify-content: start;
+  padding: 32px;
+}
+
+.myp-lising-card {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.myp-card-left {
+  position: relative;
+}
+
+.myp-card-img {
+  width: 360px;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.myp-card-img-desc {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 12px 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.myp-card-type > p {
+  margin: 2px 0;
+}
+
+.myp-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 580px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #fff;
+  color: #000;
+}
+
+.myp-card-detail > p {
+  margin-top: 6px;
+}
+
+.mp-wallpaper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -5;
+}
+
+/* Cell phone */
+@media (min-width: 200px) {
+}
+/* Tablets */
+@media (min-width: 768px) {
+}
+/* MacBook Pro */
+@media (min-width: 1024px) {
+}
+/* Extra large devices */
+@media (min-width: 1440px) {
+}
+/* Extra large devices */
+@media (min-width: 1920px) {
+}
