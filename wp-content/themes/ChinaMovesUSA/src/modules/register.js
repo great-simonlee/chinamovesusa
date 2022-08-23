@@ -24,14 +24,14 @@ if (window.location.pathname === '/register/') {
           .setLngLat([121.5003576, 31.2185876])
           .addTo(maptest);
 
-        const newPostingObj = { fea: [], ame: [] };
+        const newPostingObj = { features: [], amenities: [], address: '' };
 
         const uid = user.uid;
         const time = new Date().getTime();
         console.log(uid);
         console.log(time);
 
-        const pointMapCity = document.querySelector('#rq-area');
+        const pointMapCity = document.querySelector('#rq-city');
         const pointMapAddress = document.querySelector('#rq-address');
         const pointMapZip = document.querySelector('#rq-zip');
         pointMapAddress.addEventListener('focusout', () => {
@@ -81,190 +81,217 @@ if (window.location.pathname === '/register/') {
                 clearInterval(coorCheck);
               }
             }, 500);
-
-            // maptest.on('load', () => {
-            //   const center = newPostingObj.coordinate;
-            //   const radius = 0.5;
-            //   const options = {
-            //     steps: 30,
-            //     units: 'kilometers',
-            //   };
-            //   const circle = turf.circle(center, radius, options);
-
-            //   maptest.addSource('circleData', {
-            //     type: 'geojson',
-            //     data: circle,
-            //   });
-
-            //   // add a layer that displays the data
-            //   maptest.addLayer({
-            //     id: 'circle-fill',
-            //     type: 'fill',
-            //     source: 'circleData',
-            //     paint: {
-            //       'fill-color': '#cf352e',
-            //       // 'fill-color': '#000',
-            //       'fill-opacity': 0.3,
-            //     },
-            //   });
-            // });
           }
         });
 
-        // access the db
-        db.collection('rentListing')
-          .get()
-          .then((res) => {
-            console.log(res);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-
-        const regFile = document.querySelector('#inputFiles');
-
-        regFile.addEventListener('change', () => {
-          const uploadFiles = regFile.files;
-          const picPreviewDiv = document.querySelector('#previewPicDiv');
-          picPreviewDiv.innerHTML = ``;
-          for (i = 0; i < uploadFiles.length; i++) {
-            picPreviewDiv.innerHTML += `<img class="text-unit draggable" src="${URL.createObjectURL(
-              uploadFiles[i]
-            )}" />`;
+        const pointArea = document.querySelector('#rq-area');
+        pointMapCity.addEventListener('focusout', () => {
+          // console.log(pointArea.children.length);
+          switch (pointMapCity.value) {
+            case 'newyork':
+              pointArea.innerHTML = '';
+              pointArea.innerHTML += `
+              <option value="Manhattan Downtown" map-point="">曼哈顿-下城(Downtown)</option>
+              <option value="Manhattan Midtown" map-point="">曼哈顿-中城(Midtown)</option>
+              <option value="Manhattan Uptown" map-point="">曼哈顿-上城(Uptown)</option>
+              <option value="Long Island City" map-point="">长岛市(LIC)</option>
+              <option value="Queens" map-point="">皇后(Queens)</option>
+              <option value="Flushing" map-point="">法拉盛(Flushing)</option>
+              <option value="Brooklyn" map-point="">布鲁克林(Brooklyn)</option>
+              <option value="Staten Island" map-point="">斯塔滕岛(Staten Island)</option>
+              <option value="Bronx" map-point="">布朗克斯(Bronx)</option>
+              <option value="Etc" map-point="">其他</option>
+              `;
+              break;
+            case 'boston':
+              pointArea.innerHTML = '';
+              pointArea.innerHTML += `
+                <option value="Allston" map-point="">奥斯顿(Allston)</option>
+                <option value="Back Bay" map-point="">后湾(Back Bay)</option>
+                <option value="Brighton" map-point="">布莱顿(Brighton)</option>
+                <option value="Brookline" map-point="">布鲁克莱恩(Brookline)</option>
+                <option value="Cambridge" map-point="">剑桥(Cambridge)</option>
+                <option value="Fenway" map-point="">芬威(Fenway)</option>
+                <option value="North End" map-point="">北端(North End)</option>
+                <option value="Malden" map-point="">莫尔登(Malden)</option>
+                <option value="South End" map-point="">南端(South End)</option>
+                <option value="Somerville" map-point="">萨默维尔(Somerville)</option>
+                <option value="Etc" map-point="">其他</option>
+                `;
+              break;
+            case 'newjersey':
+              pointArea.innerHTML = '';
+              pointArea.innerHTML += `
+                  <option value="" map-point="">爱迪生(Edison)</option>
+                  <option value="" map-point="">蒙哥马利(Montgomery)</option>
+                  <option value="" map-point="">普林斯顿(Princeton)</option>
+                  <option value="" map-point="">西温莎(West Windsor)</option>
+                  <option value="" map-point="">平原市(Plainsboro)</option>
+                  <option value="" map-point="">帕拉默斯(Paramus)</option>
+                  <option value="" map-point="">利堡(Fort Lee)</option>
+                  <option value="" map-point="">锡考克斯(Secaucus)</option>
+                  <option value="" map-point="">泽西市(Jersey City)</option>
+                  <option value="" map-point="">(West New York)</option>
+                  <option value="" map-point="">(Union City)</option>
+                  <option value="" map-point="">霍博肯(Hoboken)</option>
+                  <option value="Etc" map-point="">其他</option>
+                  `;
+              break;
           }
-
-          const draggablePics = document.querySelectorAll('.draggable');
-          const lastDraggablePic = picPreviewDiv.lastElementChild;
-          const lastPicBottom = lastDraggablePic.getBoundingClientRect();
-
-          draggablePics.forEach((pic) => {
-            pic.addEventListener('dragstart', () => {
-              pic.classList.add('dragging');
-            });
-            pic.addEventListener('dragend', () => {
-              pic.classList.remove('dragging');
-            });
-            pic.addEventListener('dragover', (e) => {
-              e.preventDefault();
-              const targetBox = e.target.getBoundingClientRect();
-              const centerPointXTarget = (targetBox.left + targetBox.right) / 2;
-              const draggingEle = document.querySelector('.dragging');
-              if (e.target != draggingEle) {
-                if (
-                  (e.clientX < centerPointXTarget) &
-                  (e.clientY < lastPicBottom.bottom)
-                ) {
-                  picPreviewDiv.insertBefore(draggingEle, e.target);
-                } else if (
-                  (e.clientX > centerPointXTarget) &
-                  (e.clientY < lastPicBottom.bottom)
-                ) {
-                  picPreviewDiv.insertBefore(draggingEle, e.target.nextSibling);
-                }
-              } else {
-                return null;
-              }
-            });
-          });
-
-          picPreviewDiv.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            const draggingEle = document.querySelector('.dragging');
-            if (e.clientY > lastPicBottom.bottom) {
-              picPreviewDiv.insertBefore(
-                draggingEle,
-                e.target.lastElementChild.nextSibling
-              );
-            }
-          });
-          console.log(lastDraggablePic);
-
-          console.log(uploadFiles);
         });
 
-        const gapiConfig = {
-          apiKey: 'AIzaSyCRtWDfnZq-jw_M89y5scltB1sUe0UFqgA',
-          discoveryDocs: [
-            'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
-          ],
-          scope: 'https://www.googleapis.com/auth/drive',
-          clientId:
-            '383323609067-8ovj7j0j9ji6rsgil0nm7q30pourf2n9.apps.googleusercontent.com',
-        };
-
-        const initClient = () => {
-          gapi.client.init(gapiConfig).then(
-            function () {
-              // Listen for sign-in state changes.
-              gapi.auth2
-                .getAuthInstance()
-                .isSignedIn.listen(updateSigninStatus);
-              console.log(gapi);
-              // Handle the initial sign-in state.
-              updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-              authorizeButton.onclick = handleAuthClick;
-              signoutButton.onclick = handleSignoutClick;
-            },
-            function (error) {
-              console.error(error.details);
-            }
-          );
-        };
-
-        gapi.load('client:auth2', initClient);
-
-        // gapi.client.init(gapiConfig).then(
-        //   function () {
-        //     // Listen for sign-in state changes.
-        //     console.log('client ok');
-        //     gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-
-        //     // Handle the initial sign-in state.
-        //     updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-
-        //     authorizeButton.onclick = handleAuthClick;
-        //     signoutButton.onclick = handleSignoutClick;
-        //   },
-        //   function (error) {
-        //     console.log(error);
-        //   }
-        // );
+        // Google scripts iframe
+        const googleIframeDiv = document.querySelector('#googleIframeDiv');
+        googleIframeDiv.innerHTML = `<iframe id="reg-ifr" src="
+        https://script.google.com/macros/s/AKfycbxg3R42l7YoL-zXFPzLEfPcydvRWyjf1gQGZaLn-3f4lzRNWAA0vRWbGG33t1__HMNGyw/exec?usr=${uid}&time=${time}" frameborder="0" style="width: 100%; height: 400px; background-color: #0f0f0f;"></iframe>`;
 
         const regSubmitBtn = document.querySelector('#regSubmitBtn');
 
-        const regProp = document.querySelector('#rq-city');
+        const regCity = document.querySelector('#rq-city');
+        const regArea = document.querySelector('#rq-area');
         const regTitle = document.querySelector('#rq-title');
         const regPrice = document.querySelector('#rq-price');
         const regType = document.querySelector('#rq-type');
         const regLength = document.querySelector('#rq-length');
         const regDate = document.querySelector('#rq-movdate');
+        const regDateMonth = document.querySelector('#rq-movdate').split('-');
         const regContact = document.querySelector('#rq-contact');
         const regFea = document.querySelectorAll('.rq-fea');
         const regAme = document.querySelectorAll('.rq-ame');
         const regDesc = document.querySelector('#rq-desc');
+        const regDAddress = document.querySelector('#rq-dAddress');
+        const regBrokerFee = document.querySelector('#rq-broker');
 
         regSubmitBtn.addEventListener('click', () => {
+          const xhr = new XMLHttpRequest();
+          // const JSONurl = `https://script.google.com/macros/s/AKfycbyRKwuMenCZ2kN6jJwtPxKoZ9_1odODfqWwPkoKvK71yeUL1_qsxEPUcQdWWj0E3Jld/exec?uid=F3bYaVhsckVIwgNKTH6zAA3xwnA3&time=1659711629275`;
+          const JSONurl = `https://script.google.com/macros/s/AKfycbyRKwuMenCZ2kN6jJwtPxKoZ9_1odODfqWwPkoKvK71yeUL1_qsxEPUcQdWWj0E3Jld/exec?uid=${uid}&time=${time}`;
+          xhr.open('GET', JSONurl, true);
+          xhr.onload = function () {
+            const getResult = JSON.parse(xhr.responseText);
+            const picOrder = [];
+            for (i = 0; i < getResult.length; i++) {
+              for (j = 0; j < getResult.length; j++) {
+                if (i == getResult[j].order) {
+                  picOrder.push(getResult[j].path);
+                }
+              }
+            }
+            newPostingObj.pictures = picOrder;
+
+            validateInput(newPostingObj);
+          };
+          xhr.send();
+
+          newPostingObj.city = regCity.value;
+          newPostingObj.area = regArea.value;
           newPostingObj.prop = regProp.value;
           newPostingObj.title = regTitle.value;
           newPostingObj.price = regPrice.value;
           newPostingObj.type = regType.value;
           newPostingObj.length = regLength.value;
           newPostingObj.date = regDate.value;
+          newPostingObj.dateMonth = regDateMonth[1];
           newPostingObj.contact = regContact.value;
           newPostingObj.description = regDesc.value;
+          newPostingObj.uid = uid;
+          newPostingObj.writetime = time;
+          newPostingObj.web = 'cm';
+          newPostingObj.daddress = regDAddress.value;
+          newPostingObj.broker = regBrokerFee.value;
 
           regFea.forEach((el) => {
             if (el.checked) {
-              newPostingObj.fea.push(el.getAttribute('data-input'));
+              newPostingObj.features.push(el.getAttribute('data-input'));
             }
           });
           regAme.forEach((el) => {
             if (el.checked) {
-              newPostingObj.ame.push(el.getAttribute('data-input'));
+              newPostingObj.amenities.push(el.getAttribute('data-input'));
             }
           });
-          console.log(newPostingObj);
         });
+
+        const validateInput = (obj) => {
+          console.log(obj);
+          for (i = 0; i < Object.values(obj).length; i++) {
+            if (Object.values(obj)[i] === '') {
+              switch (Object.keys(obj)[i]) {
+                case 'address':
+                  document.getElementById('rq-address').scrollIntoView();
+                  document.getElementById('rq-address').style.border =
+                    'red solid 3px';
+                  break;
+                case 'prop':
+                  document.getElementById('rq-city').scrollIntoView();
+                  document.getElementById('rq-city').style.border =
+                    'red solid 3px';
+                  break;
+                case 'title':
+                  document.getElementById('rq-title').scrollIntoView();
+                  document.getElementById('rq-title').style.border =
+                    'red solid 3px';
+                  break;
+                case 'price':
+                  document.getElementById('rq-price').scrollIntoView();
+                  document.getElementById('rq-price').style.border =
+                    'red solid 3px';
+                  break;
+                case 'type':
+                  document.getElementById('rq-type').scrollIntoView();
+                  document.getElementById('rq-type').style.border =
+                    'red solid 3px';
+                  break;
+                case 'length':
+                  document.getElementById('rq-length').scrollIntoView();
+                  document.getElementById('rq-length').style.border =
+                    'red solid 3px';
+                  break;
+                case 'date':
+                  document.getElementById('rq-movdate').scrollIntoView();
+                  document.getElementById('rq-movdate').style.border =
+                    'red solid 3px';
+                  break;
+                case 'contact':
+                  document.getElementById('rq-contact').scrollIntoView();
+                  document.getElementById('rq-contact').style.border =
+                    'red solid 3px';
+                  break;
+                case 'description':
+                  document.getElementById('rq-desc').scrollIntoView();
+                  document.getElementById('rq-desc').style.border =
+                    'red solid 3px';
+                  break;
+                case 'daddress':
+                  document.getElementById('rq-dAddress').scrollIntoView();
+                  document.getElementById('rq-dAddress').style.border =
+                    'red solid 3px';
+                  break;
+              }
+            } else {
+              uploadListingInf(newPostingObj);
+            }
+          }
+        };
+
+        const uploadListingInf = (obj) => {
+          const docName = String(uid) + String(time);
+
+          // console.log(docName);
+          // console.log(obj);
+
+          // access the db
+          db.collection('rentListing')
+            .doc(docName)
+            .set(obj)
+            .then((result) => {
+              // TEXT TO SPINNER OR VICE VERSA
+              console.log(result);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        };
       } else {
         document.location.href = '/member-login';
       }

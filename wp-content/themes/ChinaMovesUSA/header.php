@@ -8,6 +8,11 @@
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body <?php body_class();?>>
+      <!-- <section style="display: flex; width: 100vw; background-color: #fff">
+        <h1>Hi</h1>
+        <h1>RAINIE</h1>
+        <h2>SIMON</h2>
+      </section> -->
     <nav class="gnav" id="gnav">
       <section class="gnav-bar">
         <a href="<?php echo site_url('/') ?>" class="gnav-title"><img class="gnav-logo" src="<?php echo get_theme_file_uri('/assets/img/logo/china moves logo(white w_ trans)_937x97.png') ?>" alt="ChinaMovesUSA"></a>

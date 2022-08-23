@@ -467,8 +467,8 @@ iMac 27"           2560x1440 */
   }
 
   .gnav-ul > li {
-    margin: 32px 16px 0 16px;
-    font-size: 24px;
+    margin: 32px 32px 0 32px;
+    font-size: 20px;
   }
 
   .login-signup > a {
@@ -799,7 +799,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(168, 168, 168, 0.4);
 }
 
 .main-searchbar > li {
@@ -921,6 +921,8 @@ footer {
 }
 
 .main-short-more-btn {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei,
+    sans-serif !important;
   cursor: pointer;
   border: 1px #000 solid;
   background-color: #fff;
@@ -1446,7 +1448,7 @@ footer {
   }
 
   .main-rent-title {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .main-rent-city {
@@ -1659,7 +1661,7 @@ footer {
 
   .main-banner-title {
     font-family: 'Lato', sans-serif;
-    font-size: 64px;
+    font-size: 48px;
   }
 
   .main-search {
@@ -1667,15 +1669,19 @@ footer {
   }
 
   .main-searchbar {
-    width: 1012px;
+    width: 1100px;
     height: 100px;
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 0 16px;
   }
 
   .main-searchbar > li {
-    width: 120px;
+    width: 140px;
     height: 80px;
+  }
+
+  .main-searchbar > li > label {
+    font-size: 20px;
   }
 
   .main-searchbar > li > select {
@@ -1689,31 +1695,33 @@ footer {
   }
 
   .main-searchbar > div {
-    height: 66px;
+    height: 80px;
   }
 
   .main-searchbar > div > button {
-    width: 120px;
-    height: 32px;
+    width: 140px;
+    height: 36px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .main-sel-hl {
-    height: 140px;
+    height: 100px;
     padding-right: 40px;
   }
   .main-sel-ha {
-    height: 140px;
+    height: 100px;
     padding-left: 40px;
   }
 
   .main-sel-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .main-sel-subtitle {
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #c4c4c4;
   }
 
   .main-rent {
@@ -1722,9 +1730,9 @@ footer {
 
   .main-rent-listing {
     width: 1412px;
-    grid-template-columns: 330px 330px 330px 330px;
+    grid-template-columns: 280px 280px 280px 280px;
     grid-template-rows: 280px 280px;
-    row-gap: 20px;
+    gap: 30px;
   }
 
   .main-rent-img {
@@ -1732,20 +1740,20 @@ footer {
   }
 
   .main-rent-info {
-    width: 330px;
+    width: 280px;
     height: 100px;
-    padding: 0 16px;
+    padding: 0 8px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .main-rent-city {
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 4px;
   }
 
   .main-rent-term {
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 4px;
   }
 
@@ -1753,12 +1761,13 @@ footer {
     height: 72px;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .main-rent-more-btn {
     width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 24px;
     margin-top: 28px;
   }
@@ -1770,7 +1779,7 @@ footer {
   .main-short-more-btn {
     width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 24px;
     margin-top: 28px;
   }
@@ -1784,11 +1793,12 @@ footer {
     margin: 36px 0;
   }
   .main-front-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .main-front-subtitle {
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
     color: #c9c9c9;
     margin: 4px 0 32px 0;
   }
@@ -1990,6 +2000,11 @@ footer {
 
 .rent-sel-opt {
   display: flex;
+  cursor: pointer;
+}
+
+.rent-sel-opt > p:hover {
+  color: #f78915;
 }
 
 .rent-order {
@@ -2017,6 +2032,39 @@ footer {
 
 .rent-listing-cont {
   background-color: #fff;
+}
+
+.rentStickyEle {
+  position: fixed;
+}
+
+.rent-order-btn {
+  cursor: pointer;
+}
+
+.rent-order-btn:hover {
+  /* color: #f78915; */
+  border: #f78915 2px solid;
+}
+
+.page-number {
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.page-number:hover {
+  color: #f78915;
+}
+
+.rent-listing-ls-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent-listing-ls {
+  width: 540px;
 }
 
 /* Cell phone */
@@ -2106,7 +2154,7 @@ footer {
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
@@ -2127,6 +2175,12 @@ footer {
   .rl-card {
     display: flex;
     margin-bottom: 24px;
+    transition: 100ms;
+  }
+
+  .rl-card:hover {
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0, 0.1);
   }
 
   .rl-card-cont {
@@ -2139,6 +2193,11 @@ footer {
     height: 20vw;
     border-radius: 8px;
     object-fit: cover;
+    background-image: url(images/CM_loadingspinner.24b933aa.gif);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
   }
 
   .rl-card-info {
@@ -2171,6 +2230,7 @@ footer {
     flex-direction: column;
     padding: 8px 16px;
     justify-content: space-between;
+    color: #000;
   }
 
   .rl-card-desc > h4 {
@@ -2308,7 +2368,7 @@ footer {
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
@@ -2474,7 +2534,7 @@ footer {
     border-radius: 20px;
     margin-top: 12px;
     padding: 20px 32px;
-    width: 1024px;
+    width: 1214px;
   }
 
   .rs-con-cat {
@@ -2495,7 +2555,8 @@ footer {
   }
 
   .rent-sel-opt > p {
-    margin-right: 12px;
+    font-weight: 100;
+    margin-right: 24px;
     font-size: 16px;
   }
 
@@ -2510,13 +2571,14 @@ footer {
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
     width: 16px;
     height: 16px;
   }
+
   /* 
   .rent-listing {
     height: 320px;
@@ -2592,6 +2654,7 @@ footer {
 
   .rent-listing-map {
     width: 25%;
+    height: 640px;
     /* height: 200px; */
     /* background-color: violet; */
   }
@@ -2630,6 +2693,15 @@ footer {
   .rl-pagination-num > p {
     font-weight: 700;
     margin: 0 8px;
+  }
+
+  .rent-listing-ls-cont {
+    height: 300px;
+  }
+
+  .rent-listing-ls {
+    width: 540px;
+    object-fit: cover;
   }
 }
 /* Extra large devices */
@@ -4636,12 +4708,14 @@ iMac 27"           2560x1440 */
   }
 
   .au-one-img {
-    border-radius: 16px;
+    border-radius: 10px;
     margin: 20px;
-    width: 560px;
+    width: 540px;
+    height: 360px;
   }
 
   .au-one-text {
+    width: 560px;
     padding: 20px;
     font-size: 20px;
     line-height: 2;
@@ -4652,7 +4726,7 @@ iMac 27"           2560x1440 */
   }
 
   .main-aboutus-subtitle {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 48px;
   }
 
@@ -4703,6 +4777,7 @@ iMac 27"           2560x1440 */
   position: relative;
   height: auto;
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 .reg-cont {
@@ -5973,6 +6048,11 @@ iMac 27"           2560x1440 */
   border-radius: 8px;
   margin-right: 8px;
   display: inline-block;
+  cursor: pointer;
+}
+
+.dtd-pic-sub:hover {
+  filter: brightness(130%);
 }
 
 .dtd-content-cont {
@@ -6025,6 +6105,12 @@ iMac 27"           2560x1440 */
 .dtdc-loc {
   width: 100%;
   height: auto;
+  border-radius: 16px;
+}
+
+#mapDetailDiv {
+  width: 100%;
+  height: 540px;
   border-radius: 16px;
 }
 
@@ -6178,6 +6264,23 @@ iMac 27"           2560x1440 */
   background-color: #f78915;
 }
 
+.stickyEle {
+  position: fixed;
+}
+
+.detail-ls-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 480px;
+  background-color: #fff;
+}
+
+.detail-ls {
+  width: 540px;
+}
 /* Cell phone */
 @media (min-width: 200px) {
   .dt-wallpaper {
@@ -6231,6 +6334,12 @@ iMac 27"           2560x1440 */
     height: 170px;
     margin-bottom: 2px;
     border-radius: 8px;
+
+    background-image: url(images/CM_loadingspinner.24b933aa.gif);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
   }
 
   .dtd-pic-sub-cont {
@@ -6259,6 +6368,11 @@ iMac 27"           2560x1440 */
     border-radius: 8px;
     margin-right: 2px;
     display: inline-block;
+    background-image: url(images/CM_loadingspinner.24b933aa.gif);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
   }
 
   .dt-info-cont {
@@ -6417,9 +6531,11 @@ iMac 27"           2560x1440 */
   }
 
   .dt-desc-cont > div > h1 {
+    width: 100%;
     text-align: left;
     font-size: 24px;
     font-weight: 900;
+    background-color: transparent;
   }
 
   .dt-desc-cont > div > p {
@@ -6434,14 +6550,14 @@ iMac 27"           2560x1440 */
   }
 
   .dtd-pic-main {
-    width: 824px;
-    height: auto;
+    width: 856px;
+    height: 480px;
     margin-bottom: 8px;
     border-radius: 8px;
   }
 
   .dtd-pic-sub-cont {
-    width: 824px;
+    width: 856px;
     height: 140px;
     height: auto;
     padding-bottom: 8px;
@@ -6879,6 +6995,7 @@ iMac 27"           2560x1440 */
   background-color: rgb(0, 0, 0, 0.8);
   border-radius: 24px;
   color: #fff;
+  overflow: auto;
 }
 
 .mypage-avatar {
@@ -6920,6 +7037,10 @@ iMac 27"           2560x1440 */
   border-radius: 8px;
 }
 
+/* .myListingAnchor {
+  color: #000;
+} */
+
 .listing-section {
   justify-content: start;
   padding: 32px;
@@ -6929,8 +7050,19 @@ iMac 27"           2560x1440 */
   display: flex;
   justify-content: space-between;
   width: 960px;
-  height: 200px;
-  border-radius: 16px;
+  height: 160px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+/* > .myp-card-desc */
+
+.myp-lising-card:hover .myp-card-desc {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.myp-lising-card:hover .myp-card-img {
+  filter: brightness(0.5);
 }
 
 .myp-card-left {
@@ -6938,22 +7070,29 @@ iMac 27"           2560x1440 */
 }
 
 .myp-card-img {
-  width: 360px;
-  height: 100%;
-  border-radius: 16px;
+  width: 280px;
+  height: 160px;
+  border-radius: 8px;
   object-fit: cover;
+  background-image: url(images/CM_loadingspinner.24b933aa.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
 }
 
 .myp-card-img-desc {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
+  font-size: 12px;
+  color: #fff;
   background-color: rgb(0, 0, 0, 0.6);
-  padding: 12px 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  padding: 6px 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .myp-card-type > p {
@@ -6965,7 +7104,8 @@ iMac 27"           2560x1440 */
   flex-direction: column;
   justify-content: space-between;
   width: 580px;
-  border-radius: 16px;
+  height: 160px;
+  border-radius: 8px;
   padding: 24px;
   background-color: #fff;
   color: #000;
@@ -6982,6 +7122,73 @@ iMac 27"           2560x1440 */
   height: 100vh;
   object-fit: cover;
   z-index: -5;
+}
+
+.deleteDiv {
+  height: 74px;
+  width: 74px;
+  background-color: #c0c0c0;
+  color: #000;
+  /* border: #c0c0c0 2px solid; */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.deleteDiv:hover {
+  color: #fff;
+  background-color: darkred;
+}
+
+.deleteIcon {
+  width: 40px;
+  height: 40px;
+  background-image: url(images/delete.f7a7c5c1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px;
+}
+
+.deleteDiv:hover > .deleteIcon {
+  background-image: url(images/delete_w.6fe16872.png);
+}
+
+.editDiv {
+  height: 74px;
+  width: 74px;
+  cursor: pointer;
+  background-color: #c0c0c0;
+  border-radius: 8px;
+  color: #000;
+}
+
+.editDiv:hover {
+  color: #fff;
+  background-color: darkblue;
+}
+
+.editIcon {
+  width: 40px;
+  height: 40px;
+  background-image: url(images/edit.761075b9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px;
+}
+
+.editDiv:hover > .editIcon {
+  background-image: url(images/edit_w.e7251992.png);
+}
+
+.editdeleteLoadingSpinner {
+  height: 74px;
+  width: 74px;
+  border-radius: 8px;
+  background-image: url(images/CM_loadingspinner.24b933aa.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  cursor: wait;
 }
 
 /* Cell phone */

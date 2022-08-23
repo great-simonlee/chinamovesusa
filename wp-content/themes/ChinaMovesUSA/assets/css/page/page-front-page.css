@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(168, 168, 168, 0.4);
 }
 
 .main-searchbar > li {
@@ -154,6 +154,8 @@
 }
 
 .main-short-more-btn {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei,
+    sans-serif !important;
   cursor: pointer;
   border: 1px #000 solid;
   background-color: #fff;
@@ -679,7 +681,7 @@
   }
 
   .main-rent-title {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .main-rent-city {
@@ -892,7 +894,7 @@
 
   .main-banner-title {
     font-family: 'Lato', sans-serif;
-    font-size: 64px;
+    font-size: 48px;
   }
 
   .main-search {
@@ -900,15 +902,19 @@
   }
 
   .main-searchbar {
-    width: 1012px;
+    width: 1100px;
     height: 100px;
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 0 16px;
   }
 
   .main-searchbar > li {
-    width: 120px;
+    width: 140px;
     height: 80px;
+  }
+
+  .main-searchbar > li > label {
+    font-size: 20px;
   }
 
   .main-searchbar > li > select {
@@ -922,31 +928,33 @@
   }
 
   .main-searchbar > div {
-    height: 66px;
+    height: 80px;
   }
 
   .main-searchbar > div > button {
-    width: 120px;
-    height: 32px;
+    width: 140px;
+    height: 36px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .main-sel-hl {
-    height: 140px;
+    height: 100px;
     padding-right: 40px;
   }
   .main-sel-ha {
-    height: 140px;
+    height: 100px;
     padding-left: 40px;
   }
 
   .main-sel-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .main-sel-subtitle {
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #c4c4c4;
   }
 
   .main-rent {
@@ -955,9 +963,9 @@
 
   .main-rent-listing {
     width: 1412px;
-    grid-template-columns: 330px 330px 330px 330px;
+    grid-template-columns: 280px 280px 280px 280px;
     grid-template-rows: 280px 280px;
-    row-gap: 20px;
+    gap: 30px;
   }
 
   .main-rent-img {
@@ -965,20 +973,20 @@
   }
 
   .main-rent-info {
-    width: 330px;
+    width: 280px;
     height: 100px;
-    padding: 0 16px;
+    padding: 0 8px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
 
   .main-rent-city {
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 4px;
   }
 
   .main-rent-term {
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 4px;
   }
 
@@ -986,12 +994,13 @@
     height: 72px;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .main-rent-more-btn {
     width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 24px;
     margin-top: 28px;
   }
@@ -1003,7 +1012,7 @@
   .main-short-more-btn {
     width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 24px;
     margin-top: 28px;
   }
@@ -1017,11 +1026,12 @@
     margin: 36px 0;
   }
   .main-front-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .main-front-subtitle {
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
     color: #c9c9c9;
     margin: 4px 0 32px 0;
   }

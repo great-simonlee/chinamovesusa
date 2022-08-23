@@ -89,6 +89,23 @@ window.addEventListener('DOMContentLoaded', () => {
             }
           }
         });
+        const db = firebase.firestore();
+        const userInfoRef = db.collection('userInfo');
+        userInfoRef
+          .doc(user.uid)
+          .set({
+            username: user.displayName,
+            email: user.email,
+            number: '',
+            wechat: '',
+            membership: '',
+          })
+          .then((res) => {
+            console.log(res);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       }
 
       if (window.location.pathname === '/mypage/') {

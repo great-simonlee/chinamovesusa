@@ -453,12 +453,14 @@
   }
 
   .au-one-img {
-    border-radius: 16px;
+    border-radius: 10px;
     margin: 20px;
-    width: 560px;
+    width: 540px;
+    height: 360px;
   }
 
   .au-one-text {
+    width: 560px;
     padding: 20px;
     font-size: 20px;
     line-height: 2;
@@ -469,7 +471,7 @@
   }
 
   .main-aboutus-subtitle {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 48px;
   }
 

@@ -9,6 +9,8 @@ import '../src/modules/rmMatching';
 import '../src/modules/genListing.js';
 import '../src/modules/register.js';
 import '../src/modules/header.js';
+import '../src/modules/detail.js';
+import '../src/modules/rent.js';
 
 // Mobile
 import '../src/modules/mobile/mobile.js';

@@ -48,6 +48,11 @@
 
 .rent-sel-opt {
   display: flex;
+  cursor: pointer;
+}
+
+.rent-sel-opt > p:hover {
+  color: #f78915;
 }
 
 .rent-order {
@@ -75,6 +80,39 @@
 
 .rent-listing-cont {
   background-color: #fff;
+}
+
+.rentStickyEle {
+  position: fixed;
+}
+
+.rent-order-btn {
+  cursor: pointer;
+}
+
+.rent-order-btn:hover {
+  /* color: #f78915; */
+  border: #f78915 2px solid;
+}
+
+.page-number {
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.page-number:hover {
+  color: #f78915;
+}
+
+.rent-listing-ls-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent-listing-ls {
+  width: 540px;
 }
 
 /* Cell phone */
@@ -164,7 +202,7 @@
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
@@ -185,6 +223,12 @@
   .rl-card {
     display: flex;
     margin-bottom: 24px;
+    transition: 100ms;
+  }
+
+  .rl-card:hover {
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0, 0.1);
   }
 
   .rl-card-cont {
@@ -197,6 +241,11 @@
     height: 20vw;
     border-radius: 8px;
     object-fit: cover;
+    background-image: url('/assets/img/logo/CM_loadingspinner.gif');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
   }
 
   .rl-card-info {
@@ -229,6 +278,7 @@
     flex-direction: column;
     padding: 8px 16px;
     justify-content: space-between;
+    color: #000;
   }
 
   .rl-card-desc > h4 {
@@ -366,7 +416,7 @@
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
@@ -532,7 +582,7 @@
     border-radius: 20px;
     margin-top: 12px;
     padding: 20px 32px;
-    width: 1024px;
+    width: 1214px;
   }
 
   .rs-con-cat {
@@ -553,7 +603,8 @@
   }
 
   .rent-sel-opt > p {
-    margin-right: 12px;
+    font-weight: 100;
+    margin-right: 24px;
     font-size: 16px;
   }
 
@@ -568,13 +619,14 @@
   }
 
   .rent-order-item {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .rent-order-icon {
     width: 16px;
     height: 16px;
   }
+
   /* 
   .rent-listing {
     height: 320px;
@@ -650,6 +702,7 @@
 
   .rent-listing-map {
     width: 25%;
+    height: 640px;
     /* height: 200px; */
     /* background-color: violet; */
   }
@@ -688,6 +741,15 @@
   .rl-pagination-num > p {
     font-weight: 700;
     margin: 0 8px;
+  }
+
+  .rent-listing-ls-cont {
+    height: 300px;
+  }
+
+  .rent-listing-ls {
+    width: 540px;
+    object-fit: cover;
   }
 }
 /* Extra large devices */

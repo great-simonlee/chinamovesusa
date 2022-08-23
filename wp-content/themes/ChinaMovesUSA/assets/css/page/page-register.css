@@ -2,6 +2,7 @@
   position: relative;
   height: auto;
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 .reg-cont {
