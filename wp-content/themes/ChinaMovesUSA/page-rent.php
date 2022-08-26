@@ -33,7 +33,7 @@
           <p class="searchArea" id="areamidtown" search-type="area" data-search="midtown" >曼哈顿-中城</p>
           <p class="searchArea" id="areauptown" search-type="area" data-search="uptown" >曼哈顿-上城</p>
           <p class="searchArea" id="arealic" search-type="area" data-search="lic" >长岛市</p>
-          <p class="searchArea" id="areanj" search-type="area" data-search="nj" >新泽西</p>
+          <p class="searchArea" id="areanjcity" search-type="area" data-search="njcity" >新泽西</p>
           <p class="searchArea" id="areaqueens" search-type="area" data-search="queens" >皇后区</p>
           <p class="searchArea" id="areaflushing" search-type="area" data-search="flushing" >法拉盛</p>
           <p class="searchArea" id="areabrooklyn" search-type="area" data-search="brooklyn" >布鲁克林</p>

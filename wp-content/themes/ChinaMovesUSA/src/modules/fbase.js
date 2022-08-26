@@ -48,6 +48,52 @@ window.addEventListener('DOMContentLoaded', () => {
               window.alert(err);
             });
         });
+        logInPassword.addEventListener('keypress', function (e) {
+          if (e.key === 'Enter') {
+            auth
+              .signInWithEmailAndPassword(logInEmail.value, logInPassword.value)
+              .then((result) => {
+                document.location.href = '/';
+              })
+              .catch((err) => {
+                window.alert(err);
+              });
+          }
+        });
+        document.querySelector('#resetPWbtn').addEventListener('click', () => {
+          console.log('forgot PW?');
+          document.querySelector('#logInBox').style.display = 'none';
+          document.querySelector('#forgotBtnBox').style.display = 'none';
+          document.querySelector('#logInBtn').style.display = 'none';
+          document.querySelector('#resetPWBox').style.display = 'flex';
+          document
+            .querySelector('#forgotEmailSubmitBtn')
+            .addEventListener('click', () => {
+              const resetEmailAddress =
+                document.querySelector('#resetPWEmail').value;
+              // console.log(resetEmailAddress);
+              auth
+                .sendPasswordResetEmail(resetEmailAddress)
+                .then((res) => {
+                  console.log(res);
+                  console.log('Email sent');
+                  document.querySelector('#resetPWMsg').style.display = 'block';
+                  document.querySelector(
+                    '#forgotEmailSubmitBtn'
+                  ).style.display = 'none';
+                })
+                .catch((error) => {
+                  var errorCode = error.code;
+                  var errorMessage = error.message;
+                });
+            });
+        });
+        document.querySelector('#backToLogIn').addEventListener('click', () => {
+          document.querySelector('#logInBox').style.display = 'block';
+          document.querySelector('#forgotBtnBox').style.display = 'flex';
+          document.querySelector('#logInBtn').style.display = 'block';
+          document.querySelector('#resetPWBox').style.display = 'none';
+        });
       }
       if (window.location.pathname === '/member-signup/') {
         const signUpUsername = document.querySelector('#signUpUsername');
@@ -62,11 +108,11 @@ window.addEventListener('DOMContentLoaded', () => {
         signUpBtn.addEventListener('click', () => {
           console.log('Clicked');
           if (signUpPassword.value != signUpPasswordCheck.value) {
-            console.log('Different!');
+            window.alert('Please check the password again');
           } else {
             // Display the passwords are different
             if (!signUpAgreement.checked) {
-              console.log('Not checked!');
+              window.alert('Please check the user agreement');
             } else {
               auth
                 .createUserWithEmailAndPassword(
@@ -74,15 +120,16 @@ window.addEventListener('DOMContentLoaded', () => {
                   signUpPassword.value
                 )
                 .then((result) => {
-                  result.user.updateProfile({
-                    displayName: signUpUsername.value,
-                  });
-                  setTimeout(() => {
-                    document.location.href = '/';
-                  }, 1000);
+                  result.user
+                    .updateProfile({
+                      displayName: signUpUsername.value,
+                    })
+                    .then(() => {
+                      document.location.href = '/';
+                    });
                 })
                 .catch((err) => {
-                  console.error(err.message);
+                  // console.error(err.message);
                   window.alert(err.message);
                 });
               console.log('Checked');

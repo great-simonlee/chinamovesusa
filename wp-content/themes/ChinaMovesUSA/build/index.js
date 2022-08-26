@@ -14,24 +14,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_modules_fbinit_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_modules_fbinit_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _src_modules_fbase_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/modules/fbase.js */ "./src/modules/fbase.js");
 /* harmony import */ var _src_modules_fbase_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_modules_fbase_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/modules/mypage.js */ "./src/modules/mypage.js");
-/* harmony import */ var _src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/modules/rmMatching */ "./src/modules/rmMatching.js");
-/* harmony import */ var _src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/modules/genListing.js */ "./src/modules/genListing.js");
-/* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _src_modules_register_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/modules/register.js */ "./src/modules/register.js");
-/* harmony import */ var _src_modules_register_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_src_modules_register_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _src_modules_header_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/modules/header.js */ "./src/modules/header.js");
-/* harmony import */ var _src_modules_header_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_modules_header_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _src_modules_detail_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/modules/detail.js */ "./src/modules/detail.js");
-/* harmony import */ var _src_modules_detail_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_src_modules_detail_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _src_modules_rent_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/modules/rent.js */ "./src/modules/rent.js");
-/* harmony import */ var _src_modules_rent_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_modules_rent_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/modules/mobile/mobile.js */ "./src/modules/mobile/mobile.js");
-/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _src_modules_front_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/modules/front.js */ "./src/modules/front.js");
+/* harmony import */ var _src_modules_front_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_modules_front_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/modules/mypage.js */ "./src/modules/mypage.js");
+/* harmony import */ var _src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_modules_mypage_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/modules/rmMatching */ "./src/modules/rmMatching.js");
+/* harmony import */ var _src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_modules_rmMatching__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/modules/genListing.js */ "./src/modules/genListing.js");
+/* harmony import */ var _src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_src_modules_genListing_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _src_modules_register_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/modules/register.js */ "./src/modules/register.js");
+/* harmony import */ var _src_modules_register_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_modules_register_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _src_modules_header_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/modules/header.js */ "./src/modules/header.js");
+/* harmony import */ var _src_modules_header_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_src_modules_header_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _src_modules_detail_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/modules/detail.js */ "./src/modules/detail.js");
+/* harmony import */ var _src_modules_detail_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_modules_detail_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _src_modules_rent_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/modules/rent.js */ "./src/modules/rent.js");
+/* harmony import */ var _src_modules_rent_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_src_modules_rent_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/modules/mobile/mobile.js */ "./src/modules/mobile/mobile.js");
+/* harmony import */ var _src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_src_modules_mobile_mobile_js__WEBPACK_IMPORTED_MODULE_11__);
 // CSS
  // JS
+
 
 
 
@@ -233,6 +236,41 @@ window.addEventListener('DOMContentLoaded', () => {
             window.alert(err);
           });
         });
+        logInPassword.addEventListener('keypress', function (e) {
+          if (e.key === 'Enter') {
+            auth.signInWithEmailAndPassword(logInEmail.value, logInPassword.value).then(result => {
+              document.location.href = '/';
+            }).catch(err => {
+              window.alert(err);
+            });
+          }
+        });
+        document.querySelector('#resetPWbtn').addEventListener('click', () => {
+          console.log('forgot PW?');
+          document.querySelector('#logInBox').style.display = 'none';
+          document.querySelector('#forgotBtnBox').style.display = 'none';
+          document.querySelector('#logInBtn').style.display = 'none';
+          document.querySelector('#resetPWBox').style.display = 'flex';
+          document.querySelector('#forgotEmailSubmitBtn').addEventListener('click', () => {
+            const resetEmailAddress = document.querySelector('#resetPWEmail').value; // console.log(resetEmailAddress);
+
+            auth.sendPasswordResetEmail(resetEmailAddress).then(res => {
+              console.log(res);
+              console.log('Email sent');
+              document.querySelector('#resetPWMsg').style.display = 'block';
+              document.querySelector('#forgotEmailSubmitBtn').style.display = 'none';
+            }).catch(error => {
+              var errorCode = error.code;
+              var errorMessage = error.message;
+            });
+          });
+        });
+        document.querySelector('#backToLogIn').addEventListener('click', () => {
+          document.querySelector('#logInBox').style.display = 'block';
+          document.querySelector('#forgotBtnBox').style.display = 'flex';
+          document.querySelector('#logInBtn').style.display = 'block';
+          document.querySelector('#resetPWBox').style.display = 'none';
+        });
       }
 
       if (window.location.pathname === '/member-signup/') {
@@ -246,21 +284,20 @@ window.addEventListener('DOMContentLoaded', () => {
           console.log('Clicked');
 
           if (signUpPassword.value != signUpPasswordCheck.value) {
-            console.log('Different!');
+            window.alert('Please check the password again');
           } else {
             // Display the passwords are different
             if (!signUpAgreement.checked) {
-              console.log('Not checked!');
+              window.alert('Please check the user agreement');
             } else {
               auth.createUserWithEmailAndPassword(signUpEmail.value, signUpPassword.value).then(result => {
                 result.user.updateProfile({
                   displayName: signUpUsername.value
-                });
-                setTimeout(() => {
+                }).then(() => {
                   document.location.href = '/';
-                }, 1000);
+                });
               }).catch(err => {
-                console.error(err.message);
+                // console.error(err.message);
                 window.alert(err.message);
               });
               console.log('Checked');
@@ -363,6 +400,224 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /***/ }),
 
+/***/ "./src/modules/front.js":
+/*!******************************!*\
+  !*** ./src/modules/front.js ***!
+  \******************************/
+/***/ (function() {
+
+if (window.location.pathname === '/') {
+  window.addEventListener('DOMContentLoaded', () => {
+    const db = firebase.firestore();
+    const auth = firebase.auth(); // Convert price into string
+
+    const stringCon = num => {
+      const numst = String(num);
+      let numed = '';
+
+      if (numst > 3) {
+        for (i = 0; i < numst.length - 3; i++) {
+          numed += numst[i];
+        }
+
+        numed += ',';
+
+        for (i = numst.length - 3; i < numst.length; i++) {
+          numed += numst[i];
+        }
+      }
+
+      return numed;
+    };
+
+    const NYAreaConvertor = area => {
+      let NYAreaInChinese;
+
+      switch (area) {
+        case 'uptown':
+          NYAreaInChinese = '纽约-曼哈顿-上城';
+          break;
+
+        case 'midtown':
+          NYAreaInChinese = '纽约-曼哈顿-中城';
+          break;
+
+        case 'downtown':
+          NYAreaInChinese = '纽约-曼哈顿-下城';
+          break;
+
+        case 'lic':
+          NYAreaInChinese = '纽约-长岛市';
+          break;
+
+        case 'queens':
+          NYAreaInChinese = '纽约-皇后区';
+          break;
+
+        case 'flushing':
+          NYAreaInChinese = '纽约-法拉盛';
+          break;
+
+        case 'brooklyn':
+          NYAreaInChinese = '纽约-布鲁克林';
+          break;
+
+        case 'bronx':
+          NYAreaInChinese = '纽约-布朗克斯';
+          break;
+
+        case 'etc':
+          NYAreaInChinese = '纽约-其他';
+          break;
+
+        default:
+          break;
+      }
+
+      return NYAreaInChinese;
+    };
+
+    const BOSAreaConvertor = area => {
+      let BOSAreaInChinese;
+
+      switch (area) {
+        case 'allston':
+          BOSAreaInChinese = '波士顿-奥斯顿';
+          break;
+
+        case 'backbay':
+          BOSAreaInChinese = '波士顿-后湾';
+          break;
+
+        case 'brighton':
+          BOSAreaInChinese = '波士顿-布莱顿';
+          break;
+
+        case 'brookline':
+          BOSAreaInChinese = '波士顿-布鲁克莱恩';
+          break;
+
+        case 'cambridge':
+          BOSAreaInChinese = '波士顿-剑桥';
+          break;
+
+        case 'downtown':
+          BOSAreaInChinese = '波士顿-下城';
+          break;
+
+        case 'fenway':
+          BOSAreaInChinese = '波士顿-芬威';
+          break;
+
+        case 'northend':
+          BOSAreaInChinese = '波士顿-北端';
+          break;
+
+        case 'malden':
+          BOSAreaInChinese = '波士顿-莫尔登';
+          break;
+
+        case 'southend':
+          BOSAreaInChinese = '波士顿-南端';
+          break;
+
+        case 'somerville':
+          BOSAreaInChinese = '波士顿-萨默维尔';
+          break;
+
+        case 'etc':
+          BOSAreaInChinese = '波士顿-其他';
+          break;
+
+        default:
+          break;
+      }
+
+      return BOSAreaInChinese;
+    };
+
+    const NYlistingRef = db.collection('rentListing');
+    const NYListingDiv = document.querySelector('#NYListingDiv');
+    NYlistingRef.orderBy('writetime', 'asc').limit(8).get().then(res => {
+      NYListingDiv.style.display = 'grid';
+      res.docs.map(el => {
+        // console.log(el.data());
+        NYListingDiv.innerHTML += `
+            <a class="frontToListing" href="/detail/?li=${el.data().uid}${el.data().writetime}" target="blank">
+              <div class="main-rent-card">
+                <img class="main-rent-img" src="https://drive.google.com/uc?export=view&id=${el.data().pictures[0]}" alt="rentExample">
+                <div class="main-rent-info">
+                  <div>
+                    <p class="main-rent-title">${el.data().title}</p>
+                    <p class="main-rent-city">${NYAreaConvertor(el.data().area)}</p>
+                    <p class="main-rent-term">租期：${el.data().length}</p>
+                  </div>
+                  <div class="main-rent-price"><p>$ ${stringCon(el.data().price)}/月</p></div>
+                </div>
+              </div>
+            </a>`;
+      });
+      document.querySelector('#frontPreLoading').style.display = 'none';
+    });
+    const BOSlistingRef = db.collection('bostonListing');
+    BOSlistingRef.orderBy('writetime', 'desc').limit(8).get().then(res => {
+      const BOSListingDiv = document.querySelector('#BOSListingDiv');
+      res.docs.map(el => {
+        BOSListingDiv.innerHTML += `
+            <div class="main-rent-card">
+              <img class="main-rent-img" src="https://drive.google.com/uc?export=view&id=${el.data().pictures[0]}" alt="rentExample">
+              <div class="main-rent-info">
+                <div>
+                  <p class="main-rent-title">${el.data().title}</p>
+                  <p class="main-rent-city">${BOSAreaConvertor(el.data().area)}</p>
+                  <p class="main-rent-term">租期：${el.data().length}</p>
+                </div>
+                <div class="main-rent-price"><p>$ ${stringCon(el.data().price)}/月</p></div>
+              </div>
+            </div>`;
+      });
+    });
+    BOSlistingRef.orderBy('writetime', 'desc').limit(6).get().then(res => {
+      res.docs.map(el => {// console.log(el.data());
+      });
+    });
+    document.querySelector('#mainSearchBtn').addEventListener('click', () => {
+      let queryString = '?';
+      document.querySelectorAll('.mainSearchSelectOption').forEach(el => {
+        if (el.selected) {
+          if (queryString.length == 1) {
+            queryString += el.value;
+          } else {
+            queryString += '&' + el.value;
+          }
+        }
+      });
+      window.location = '/rent/' + queryString;
+    });
+    const hotListingDiv = document.querySelector('#frontHotListing');
+    const hotAreaDiv = document.querySelector('#frontHotArea');
+    const HOTAreaCat = document.querySelector('#HOTAreaCat');
+    hotListingDiv.addEventListener('click', () => {
+      hotAreaDiv.style.backgroundColor = 'rgb(0, 0, 0, 0.8)';
+      hotAreaDiv.children[0].style.color = '#fff';
+      hotListingDiv.style.backgroundColor = 'rgb(255, 255, 255)';
+      hotListingDiv.children[0].style.color = '#000';
+      NYListingDiv.style.display = 'grid';
+      HOTAreaCat.style.display = 'none';
+    });
+    hotAreaDiv.addEventListener('click', () => {
+      hotListingDiv.style.backgroundColor = 'rgb(0, 0, 0, 0.8)';
+      hotListingDiv.children[0].style.color = '#fff';
+      hotAreaDiv.style.backgroundColor = 'rgb(255, 255, 255)';
+      hotAreaDiv.children[0].style.color = '#000';
+      NYListingDiv.style.display = 'none';
+      HOTAreaCat.style.display = 'grid';
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./src/modules/genListing.js":
 /*!***********************************!*\
   !*** ./src/modules/genListing.js ***!
@@ -434,44 +689,34 @@ if (window.location.pathname === '/mypage/') {
             }
 
             myListingDiv.innerHTML += `
-              
                 <div class="myp-lising-card">
-                <a class="myListingAnchor" href="/detail/?li=${el.data().uid}${el.data().writetime}" target="_blank">
-                  <div class="myp-card-left">
-                    <img class="myp-card-img" src="https://drive.google.com/uc?export=view&id=${el.data().pictures[0]}">
-                    <div class="myp-card-img-desc">
-                      <div class="myp-card-type">
-                        <p>${objPropBed}</p>
-                        <p>${objPropBath}</p>
+                  <a class="myListingAnchor" href="/detail/?li=${el.data().uid}${el.data().writetime}" target="_blank">
+                    <div class="myp-card-left">
+                      <img class="myp-card-img" src="https://drive.google.com/uc?export=view&id=${el.data().pictures[0]}">
+                      <div class="myp-card-img-desc">
+                        <div class="myp-card-type">
+                          <p>${objPropBed}</p>
+                          <p>${objPropBath}</p>
+                        </div>
+                        <div class="myp-card-price">$ ${el.data().price}/月</div>
                       </div>
-                      <div class="myp-card-price">$ ${el.data().price}/月</div>
                     </div>
-                  </div>
                   </a>
                   <a class="myListingAnchor" href="/detail/?li=${el.data().uid}${el.data().writetime}" target="blank">
-                  <div class="myp-card-desc">
-                    <p>${el.data().title}</p>
-                    <div class="myp-card-detail">
-                      <p>租期：${el.data().length}</p>
-                      <p>入住时间：${el.data().date}</p>
-                      <p>发布时间：${timestamp.getMonth() + 1}/${timestamp.getDate()}/${timestamp.getFullYear()} ${timestamp.getHours()}:${timestamp.getMinutes()}</p>
+                    <div class="myp-card-desc">
+                      <div class="myp-card-detail">
+                        <p>${el.data().title}</p>
+                        <p>租期：${el.data().length}</p>
+                        <p>入住时间：${el.data().date}</p>
+                        <p>发布时间：${timestamp.getMonth() + 1}/${timestamp.getDate()}/${timestamp.getFullYear()} ${timestamp.getHours()}:${timestamp.getMinutes()}</p>
+                      </div>
                     </div>
-                  </div>
                   </a>
-                  <div style="display: flex; flex-direction: column; justify-content: space-between;align-items: center;">
-                    <div class="editDiv" style="display: flex; flex-direction: column; justify-content: center;align-items: center;" data-search="${el.data().uid}${el.data().writetime}">
-                      <img class="editIcon">
-                      <img class="editdeleteLoadingSpinner" style="display: none">
-                      <p>Edit</p>
-                    </div>
-                    <div class="deleteDiv" style="display: flex; flex-direction: column; justify-content: center;align-items: center;" data-search="${el.data().uid}${el.data().writetime}">
-                      <img class="deleteIcon" >
-                      <img class="editdeleteLoadingSpinner" style="display: none">
-                      <p>Delete</p>
-                    </div>
+                  <div class="myp-card-editdelete">
+                    <i class="fa fa-pencil-square-o editdelete" aria-hidden="true" data-search="${el.data().uid}${el.data().writetime}"><span>&nbsp;编辑</span></i>
+                    <i class="fa fa-trash-o editdelete deleteDiv" aria-hidden="true" data-search="${el.data().uid}${el.data().writetime}"><span>&nbsp;删除</span></i>
                   </div>
                 </div>
-              </a>
               `;
           }); // Edit and Delete btn activation
 
@@ -485,9 +730,6 @@ if (window.location.pathname === '/mypage/') {
           const deleteDiv = document.querySelectorAll('.deleteDiv');
           deleteDiv.forEach(el => {
             el.addEventListener('click', () => {
-              el.children[0].style.display = 'none';
-              el.children[1].style.display = 'flex';
-              el.children[2].style.display = 'none';
               listingRef.doc(el.getAttribute('data-search')).delete().then(() => {
                 console.log('Successfully deleted');
                 location.reload();
@@ -636,33 +878,33 @@ if (window.location.pathname === '/register/') {
             case 'newyork':
               pointArea.innerHTML = '';
               pointArea.innerHTML += `
-              <option value="Manhattan Downtown" map-point="">曼哈顿-下城(Downtown)</option>
-              <option value="Manhattan Midtown" map-point="">曼哈顿-中城(Midtown)</option>
-              <option value="Manhattan Uptown" map-point="">曼哈顿-上城(Uptown)</option>
-              <option value="Long Island City" map-point="">长岛市(LIC)</option>
-              <option value="Queens" map-point="">皇后(Queens)</option>
-              <option value="Flushing" map-point="">法拉盛(Flushing)</option>
-              <option value="Brooklyn" map-point="">布鲁克林(Brooklyn)</option>
-              <option value="Staten Island" map-point="">斯塔滕岛(Staten Island)</option>
-              <option value="Bronx" map-point="">布朗克斯(Bronx)</option>
-              <option value="Etc" map-point="">其他</option>
+              <option value="downtown" map-point="">曼哈顿-下城(Downtown)</option>
+              <option value="midtown" map-point="">曼哈顿-中城(Midtown)</option>
+              <option value="uptown" map-point="">曼哈顿-上城(Uptown)</option>
+              <option value="lic" map-point="">长岛市(LIC)</option>
+              <option value="queens" map-point="">皇后区(Queens)</option>
+              <option value="flushing" map-point="">法拉盛(Flushing)</option>
+              <option value="brooklyn" map-point="">布鲁克林(Brooklyn)</option>
+              <option value="bronx" map-point="">布朗克斯(Bronx)</option>
+              <option value="etc" map-point="">其他</option>
               `;
               break;
 
             case 'boston':
               pointArea.innerHTML = '';
               pointArea.innerHTML += `
-                <option value="Allston" map-point="">奥斯顿(Allston)</option>
-                <option value="Back Bay" map-point="">后湾(Back Bay)</option>
-                <option value="Brighton" map-point="">布莱顿(Brighton)</option>
-                <option value="Brookline" map-point="">布鲁克莱恩(Brookline)</option>
-                <option value="Cambridge" map-point="">剑桥(Cambridge)</option>
-                <option value="Fenway" map-point="">芬威(Fenway)</option>
-                <option value="North End" map-point="">北端(North End)</option>
-                <option value="Malden" map-point="">莫尔登(Malden)</option>
-                <option value="South End" map-point="">南端(South End)</option>
-                <option value="Somerville" map-point="">萨默维尔(Somerville)</option>
-                <option value="Etc" map-point="">其他</option>
+                <option value="allston" map-point="">奥斯顿(Allston)</option>
+                <option value="backbay" map-point="">后湾(Back Bay)</option>
+                <option value="brighton" map-point="">布莱顿(Brighton)</option>
+                <option value="brookline" map-point="">布鲁克莱恩(Brookline)</option>
+                <option value="cambridge" map-point="">剑桥(Cambridge)</option>
+                <option value="downtown" map-point="">下城(Downtown)</option>
+                <option value="fenway" map-point="">芬威(Fenway)</option>
+                <option value="northend" map-point="">北端(North End)</option>
+                <option value="malden" map-point="">莫尔登(Malden)</option>
+                <option value="southend" map-point="">南端(South End)</option>
+                <option value="somerville" map-point="">萨默维尔(Somerville)</option>
+                <option value="etc" map-point="">其他</option>
                 `;
               break;
 

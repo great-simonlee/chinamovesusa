@@ -21,76 +21,76 @@
             <label for="">房型</label>
             <select name="" id="">
               <option disabled selected value style="display:none"></option>
-              <option value="">Studio</option>
-              <option value="">一室一卫</option>
-              <option value="">一室两卫</option>
-              <option value="">两室一卫</option>
-              <option value="">两室两卫</option>
-              <option value="">三室一卫</option>
-              <option value="">三室两卫</option>
-              <option value="">四室两卫</option>
-              <option value="">其他</option>
+              <option class="mainSearchSelectOption" value="type=studio">Studio</option>
+              <option class="mainSearchSelectOption" value="type=1b1b">一室一卫</option>
+              <option class="mainSearchSelectOption" value="type=1b2b">一室两卫</option>
+              <option class="mainSearchSelectOption" value="type=2b1b">两室一卫</option>
+              <option class="mainSearchSelectOption" value="type=2b2b">两室两卫</option>
+              <option class="mainSearchSelectOption" value="type=3b1b">三室一卫</option>
+              <option class="mainSearchSelectOption" value="type=3b2b">三室两卫</option>
+              <option class="mainSearchSelectOption" value="type=4b2b">四室两卫</option>
+              <option class="mainSearchSelectOption" value="type=etc">其他</option>
             </select>
           </li>
           <li>
             <label for="">租金</label>
             <select name="" id="">
               <option disabled selected value style="display:none"></option>
-              <option value="">$2,000 以下</option>
-              <option value="">~$3,000</option>
-              <option value="">~$4,000</option>
-              <option value="">~$5,000</option>
-              <option value="">~$6,000</option>
-              <option value="">$6,000 以上</option>
+              <option class="mainSearchSelectOption" value="price=l1">$1,000 以下</option>
+              <option class="mainSearchSelectOption" value="price=g1l2">$1,000~$2,000</option>
+              <option class="mainSearchSelectOption" value="price=g2l3">$2,000~$3,000</option>
+              <option class="mainSearchSelectOption" value="price=g3l4">$3,000~$4,000</option>
+              <option class="mainSearchSelectOption" value="price=g4l5">$4,000~$5,000</option>
+              <option class="mainSearchSelectOption" value="price=g5l6">$5,000~$6,000</option>
+              <option class="mainSearchSelectOption" value="price=g6">$6,000 以上</option>
             </select>
           </li>
           <li>
             <label for="">租期</label>
             <select name="" id="">
               <option disabled selected value style="display:none"></option>
-              <option value="">1个月</option>
-              <option value="">2个月</option>
-              <option value="">3个月</option>
-              <option value="">4个月</option>
-              <option value="">5个月</option>
-              <option value="">6个月</option>
-              <option value="">7个月</option>
-              <option value="">8个月</option>
-              <option value="">9个月</option>
-              <option value="">10个月</option>
-              <option value="">11个月</option>
-              <option value="">12个月</option>
-              <option value="">12个月以上</option>
+              <option class="mainSearchSelectOption" value="length=12个月">12个月及以上</option>
+              <option class="mainSearchSelectOption" value="length=1个月">1个月</option>
+              <option class="mainSearchSelectOption" value="length=2个月">2个月</option>
+              <option class="mainSearchSelectOption" value="length=3个月">3个月</option>
+              <option class="mainSearchSelectOption" value="length=4个月">4个月</option>
+              <option class="mainSearchSelectOption" value="length=5个月">5个月</option>
+              <option class="mainSearchSelectOption" value="length=6个月">6个月</option>
+              <option class="mainSearchSelectOption" value="length=7个月">7个月</option>
+              <option class="mainSearchSelectOption" value="length=8个月">8个月</option>
+              <option class="mainSearchSelectOption" value="length=9个月">9个月</option>
+              <option class="mainSearchSelectOption" value="length=10个月">10个月</option>
+              <option class="mainSearchSelectOption" value="length=11个月">11个月</option>
             </select>
           </li>
           <li>
             <label for="">入住时间</label>
             <select name="" id="">
               <option disabled selected value style="display:none"></option>
-              <option value="">1月</option>
-              <option value="">2月</option>
-              <option value="">3月</option>
-              <option value="">4月</option>
-              <option value="">5月</option>
-              <option value="">6月</option>
-              <option value="">7月</option>
-              <option value="">8月</option>
-              <option value="">9月</option>
-              <option value="">10月</option>
-              <option value="">11月</option>
-              <option value="">12月</option>
+              <option class="mainSearchSelectOption" value="date=1">1月</option>
+              <option class="mainSearchSelectOption" value="date=2">2月</option>
+              <option class="mainSearchSelectOption" value="date=3">3月</option>
+              <option class="mainSearchSelectOption" value="date=4">4月</option>
+              <option class="mainSearchSelectOption" value="date=5">5月</option>
+              <option class="mainSearchSelectOption" value="date=6">6月</option>
+              <option class="mainSearchSelectOption" value="date=7">7月</option>
+              <option class="mainSearchSelectOption" value="date=8">8月</option>
+              <option class="mainSearchSelectOption" value="date=9">9月</option>
+              <option class="mainSearchSelectOption" value="date=10">10月</option>
+              <option class="mainSearchSelectOption" value="date=11">11月</option>
+              <option class="mainSearchSelectOption" value="date=12">12月</option>
             </select>
           </li>
           <li>
             <label for="">中介费</label>
             <select name="" id="">
               <option disabled selected value style="display:none"></option>
-              <option value="">无中介费</option>
-              <option value="">有中介费</option>
+              <option class="mainSearchSelectOption" value="broker=NozBrokerzFee">无中介费</option>
+              <option class="mainSearchSelectOption" value="broker=BrokerzFee">有中介费</option>
             </select>
           </li>
           <div>
-            <button>搜索</button>
+            <button id="mainSearchBtn">搜索</button>
           </div>
       </ul>
     </div>
@@ -98,214 +98,75 @@
 </section>
 <img class="main-banner-img" src="<?php echo get_theme_file_uri('/assets/img/banner/front-banner.png') ?>" alt="mainBanner">  
 <section class="main-sel-con">
-  <div class="main-sel-hl">
+  <div class="main-sel-hl" id="frontHotListing">
     <p class="main-sel-title">热门房源</p>
     <p class="main-sel-subtitle">HOT LISTINGS</p>
   </div>
-  <div class="main-sel-ha">
+  <div class="main-sel-ha" id="frontHotArea">
     <p class="main-sel-title">热门区域</p>
     <p class="main-sel-subtitle">HOT AREAS</p>
   </div>
 </section>
 <section class="main-rent">
-  <div class="main-rent-listing">
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing1.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+  <img class="rent-listing-ls" id="frontPreLoading" src="<?php echo get_theme_file_uri('/assets/img/logo/loadingListing.gif') ?>">
+  <div class="main-rent-listing" id="NYListingDiv" style="display: none;">
+  </div>
+  <div class="main-rent-listing" id="HOTAreaCat" style="display: none;">
+    <div class="main-rent-card" url-search="/rent/?area=uptown">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/upperman.png') ?>" alt="area">
+      <div class="main-area-info"><p>Upper<br>Manhattan</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=midtown">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/midman.png') ?>" alt="area">
+      <div class="main-area-info"><p>Midtown<br>Manhattan</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=downtown">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/lowerman.png') ?>" alt="area">
+      <div class="main-area-info"><p>Lower<br>Manhattan</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=lic">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/lic.png') ?>" alt="area">
+      <div class="main-area-info"><p>Long<br>Island<br>City</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=flushing">
+      <img class="main-rent-img" style="filter: grayscale(50%);" src="<?php echo get_theme_file_uri('/assets/img/area/flushing.png') ?>" alt="area">
+      <div class="main-area-info"><p>Flushing</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=njcity">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/jserseycity.png') ?>" alt="area">
+      <div class="main-area-info"><p>Jersey<br>City</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=brooklyn">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/bk.png') ?>" alt="area">
+      <div class="main-area-info"><p>Brooklyn</p></div>
     </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing8.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
+    <div class="main-rent-card" url-search="/rent/?area=queens">
+      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/area/queens.png') ?>" alt="area">
+      <div class="main-area-info"><p>Queens</p></div>
     </div>
   </div>
-  <button class="main-rent-more-btn">查看所有房源 &#160;	<span class="more-btn-spe">&rsaquo;</span></button>
+  <button class="main-rent-more-btn"><a href="/rent" style="color:#fff">查看所有房源 &#160;</a><span class="more-btn-spe">&rsaquo;</span></button>
 </section>
 <section class="main-short">
   <p class="main-front-title">短租房源</p>
   <p class="main-front-subtitle">SUBLET LISTINGS</p>
-  <div class="main-rent-listing">
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing1.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing2.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing3.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing4.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing5.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing6.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing7.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
-    <div class="main-rent-card">
-      <img class="main-rent-img" src="<?php echo get_theme_file_uri('/assets/img/example/listing8.png') ?>" alt="rentExample">
-      <div class="main-rent-info">
-        <div>
-          <p class="main-rent-title">LIC超值1b1b房源</p>
-          <p class="main-rent-city">纽约-长岛市</p>
-          <p class="main-rent-term">租期：05/10/2022-05/10/2022</p>
-        </div>
-        <div class="main-rent-price"><p>$3,000/月</p></div>
-      </div>
-    </div>
+  <div class="main-rent-listing" id="BOSListingDiv">
   </div>
   <button class="main-short-more-btn">更多短租房源 &#160;	<span class="more-btn-spe">&rsaquo;</span></button>
 </section>
 <section class="main-rm">
   <p class="main-front-title">找室友/找合租</p>
   <p class="main-front-subtitle">ROOMMATE</p>
-  <div class="main-rm-banner">
-    <div class="main-rm-txt">
-      <p>想找志同道合的人一起合租？</p>
-      <p>想要用最低的预算住自己喜欢的公寓？</p>
-      <button>Go</button>
+  <a href="/roommate">
+    <div class="main-rm-banner">
+      <div class="main-rm-txt">
+        <p>想找志同道合的人一起合租？</p>
+        <p>想要用最低的预算住自己喜欢的公寓？</p>
+        <button>Go</button>
+      </div>
+      <img class="main-rm-img" src="<?php echo get_theme_file_uri('/assets/img/banner/front-rm.jpg') ?>" alt="roommate">
     </div>
-    <img class="main-rm-img" src="<?php echo get_theme_file_uri('/assets/img/banner/front-rm.jpg') ?>" alt="roommate">
-  </div>
+  </a>
 </section>
 <section class="main-contact">
   <div class="main-con-container">

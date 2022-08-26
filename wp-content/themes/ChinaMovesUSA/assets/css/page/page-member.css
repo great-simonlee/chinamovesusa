@@ -1,3 +1,20 @@
+.resetPWbtn {
+  cursor: pointer;
+}
+
+.resetPWbtn:hover {
+  text-decoration: underline;
+}
+
+.backToLogIn {
+  color: #fff;
+  cursor: pointer;
+}
+
+.backToLogIn:hover {
+  text-decoration: underline;
+}
+
 /* Cell phone */
 @media (min-width: 200px) {
   .mBody {

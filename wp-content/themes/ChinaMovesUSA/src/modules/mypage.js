@@ -31,58 +31,51 @@ if (window.location.pathname === '/mypage/') {
               }
 
               myListingDiv.innerHTML += `
-              
                 <div class="myp-lising-card">
-                <a class="myListingAnchor" href="/detail/?li=${el.data().uid}${
-                el.data().writetime
-              }" target="_blank">
-                  <div class="myp-card-left">
-                    <img class="myp-card-img" src="https://drive.google.com/uc?export=view&id=${
-                      el.data().pictures[0]
-                    }">
-                    <div class="myp-card-img-desc">
-                      <div class="myp-card-type">
-                        <p>${objPropBed}</p>
-                        <p>${objPropBath}</p>
+                  <a class="myListingAnchor" href="/detail/?li=${
+                    el.data().uid
+                  }${el.data().writetime}" target="_blank">
+                    <div class="myp-card-left">
+                      <img class="myp-card-img" src="https://drive.google.com/uc?export=view&id=${
+                        el.data().pictures[0]
+                      }">
+                      <div class="myp-card-img-desc">
+                        <div class="myp-card-type">
+                          <p>${objPropBed}</p>
+                          <p>${objPropBath}</p>
+                        </div>
+                        <div class="myp-card-price">$ ${
+                          el.data().price
+                        }/月</div>
                       </div>
-                      <div class="myp-card-price">$ ${el.data().price}/月</div>
                     </div>
-                  </div>
                   </a>
                   <a class="myListingAnchor" href="/detail/?li=${
                     el.data().uid
                   }${el.data().writetime}" target="blank">
-                  <div class="myp-card-desc">
-                    <p>${el.data().title}</p>
-                    <div class="myp-card-detail">
-                      <p>租期：${el.data().length}</p>
-                      <p>入住时间：${el.data().date}</p>
-                      <p>发布时间：${
-                        timestamp.getMonth() + 1
-                      }/${timestamp.getDate()}/${timestamp.getFullYear()} ${timestamp.getHours()}:${timestamp.getMinutes()}</p>
+                    <div class="myp-card-desc">
+                      <div class="myp-card-detail">
+                        <p>${el.data().title}</p>
+                        <p>租期：${el.data().length}</p>
+                        <p>入住时间：${el.data().date}</p>
+                        <p>发布时间：${
+                          timestamp.getMonth() + 1
+                        }/${timestamp.getDate()}/${timestamp.getFullYear()} ${timestamp.getHours()}:${timestamp.getMinutes()}</p>
+                      </div>
                     </div>
-                  </div>
                   </a>
-                  <div style="display: flex; flex-direction: column; justify-content: space-between;align-items: center;">
-                    <div class="editDiv" style="display: flex; flex-direction: column; justify-content: center;align-items: center;" data-search="${
+                  <div class="myp-card-editdelete">
+                    <i class="fa fa-pencil-square-o editdelete" aria-hidden="true" data-search="${
                       el.data().uid
-                    }${el.data().writetime}">
-                      <img class="editIcon">
-                      <img class="editdeleteLoadingSpinner" style="display: none">
-                      <p>Edit</p>
-                    </div>
-                    <div class="deleteDiv" style="display: flex; flex-direction: column; justify-content: center;align-items: center;" data-search="${
+                    }${el.data().writetime}"><span>&nbsp;编辑</span></i>
+                    <i class="fa fa-trash-o editdelete deleteDiv" aria-hidden="true" data-search="${
                       el.data().uid
-                    }${el.data().writetime}">
-                      <img class="deleteIcon" >
-                      <img class="editdeleteLoadingSpinner" style="display: none">
-                      <p>Delete</p>
-                    </div>
+                    }${el.data().writetime}"><span>&nbsp;删除</span></i>
                   </div>
                 </div>
-              </a>
               `;
             });
+
             // Edit and Delete btn activation
             const editDiv = document.querySelectorAll('.editDiv');
             editDiv.forEach((el) => {
@@ -94,9 +87,6 @@ if (window.location.pathname === '/mypage/') {
             const deleteDiv = document.querySelectorAll('.deleteDiv');
             deleteDiv.forEach((el) => {
               el.addEventListener('click', () => {
-                el.children[0].style.display = 'none';
-                el.children[1].style.display = 'flex';
-                el.children[2].style.display = 'none';
                 listingRef
                   .doc(el.getAttribute('data-search'))
                   .delete()

@@ -91,32 +91,32 @@ if (window.location.pathname === '/register/') {
             case 'newyork':
               pointArea.innerHTML = '';
               pointArea.innerHTML += `
-              <option value="Manhattan Downtown" map-point="">曼哈顿-下城(Downtown)</option>
-              <option value="Manhattan Midtown" map-point="">曼哈顿-中城(Midtown)</option>
-              <option value="Manhattan Uptown" map-point="">曼哈顿-上城(Uptown)</option>
-              <option value="Long Island City" map-point="">长岛市(LIC)</option>
-              <option value="Queens" map-point="">皇后(Queens)</option>
-              <option value="Flushing" map-point="">法拉盛(Flushing)</option>
-              <option value="Brooklyn" map-point="">布鲁克林(Brooklyn)</option>
-              <option value="Staten Island" map-point="">斯塔滕岛(Staten Island)</option>
-              <option value="Bronx" map-point="">布朗克斯(Bronx)</option>
-              <option value="Etc" map-point="">其他</option>
+              <option value="downtown" map-point="">曼哈顿-下城(Downtown)</option>
+              <option value="midtown" map-point="">曼哈顿-中城(Midtown)</option>
+              <option value="uptown" map-point="">曼哈顿-上城(Uptown)</option>
+              <option value="lic" map-point="">长岛市(LIC)</option>
+              <option value="queens" map-point="">皇后区(Queens)</option>
+              <option value="flushing" map-point="">法拉盛(Flushing)</option>
+              <option value="brooklyn" map-point="">布鲁克林(Brooklyn)</option>
+              <option value="bronx" map-point="">布朗克斯(Bronx)</option>
+              <option value="etc" map-point="">其他</option>
               `;
               break;
             case 'boston':
               pointArea.innerHTML = '';
               pointArea.innerHTML += `
-                <option value="Allston" map-point="">奥斯顿(Allston)</option>
-                <option value="Back Bay" map-point="">后湾(Back Bay)</option>
-                <option value="Brighton" map-point="">布莱顿(Brighton)</option>
-                <option value="Brookline" map-point="">布鲁克莱恩(Brookline)</option>
-                <option value="Cambridge" map-point="">剑桥(Cambridge)</option>
-                <option value="Fenway" map-point="">芬威(Fenway)</option>
-                <option value="North End" map-point="">北端(North End)</option>
-                <option value="Malden" map-point="">莫尔登(Malden)</option>
-                <option value="South End" map-point="">南端(South End)</option>
-                <option value="Somerville" map-point="">萨默维尔(Somerville)</option>
-                <option value="Etc" map-point="">其他</option>
+                <option value="allston" map-point="">奥斯顿(Allston)</option>
+                <option value="backbay" map-point="">后湾(Back Bay)</option>
+                <option value="brighton" map-point="">布莱顿(Brighton)</option>
+                <option value="brookline" map-point="">布鲁克莱恩(Brookline)</option>
+                <option value="cambridge" map-point="">剑桥(Cambridge)</option>
+                <option value="downtown" map-point="">下城(Downtown)</option>
+                <option value="fenway" map-point="">芬威(Fenway)</option>
+                <option value="northend" map-point="">北端(North End)</option>
+                <option value="malden" map-point="">莫尔登(Malden)</option>
+                <option value="southend" map-point="">南端(South End)</option>
+                <option value="somerville" map-point="">萨默维尔(Somerville)</option>
+                <option value="etc" map-point="">其他</option>
                 `;
               break;
             case 'newjersey':

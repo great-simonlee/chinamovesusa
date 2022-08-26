@@ -854,6 +854,7 @@ footer {
   align-items: end;
   width: 50vw;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .main-sel-ha {
@@ -864,6 +865,7 @@ footer {
   width: 50vw;
   background-color: rgb(0, 0, 0, 0.8);
   color: #fff;
+  cursor: pointer;
 }
 
 .main-rent {
@@ -886,6 +888,15 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-image: url(images/CM_loadingspinner.24b933aa.gif);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+.main-rent-card:hover .main-rent-img {
+  filter: brightness(70%);
 }
 
 .main-rent-info {
@@ -897,6 +908,23 @@ footer {
   background-color: rgb(0, 0, 0, 0.8);
   color: #fff;
   z-index: 3;
+}
+
+.main-area-info {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 3;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .main-rent-more-btn {
@@ -1135,6 +1163,9 @@ footer {
 
   .main-rent-title {
     font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .main-rent-city {
@@ -1448,6 +1479,7 @@ footer {
   }
 
   .main-rent-title {
+    width: 180px;
     font-size: 16px;
   }
 
@@ -1736,12 +1768,15 @@ footer {
   }
 
   .main-rent-img {
+    width: 280px;
+    height: 280px;
     border-radius: 16px;
   }
 
   .main-rent-info {
     width: 280px;
-    height: 100px;
+    height: 80px;
+    bottom: 0;
     padding: 0 8px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -1759,7 +1794,7 @@ footer {
 
   .main-rent-price {
     height: 72px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -2711,6 +2746,23 @@ footer {
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./assets/css/page/page-member.css ***!
   \***************************************************************************************************************/
+.resetPWbtn {
+  cursor: pointer;
+}
+
+.resetPWbtn:hover {
+  text-decoration: underline;
+}
+
+.backToLogIn {
+  color: #fff;
+  cursor: pointer;
+}
+
+.backToLogIn:hover {
+  text-decoration: underline;
+}
+
 /* Cell phone */
 @media (min-width: 200px) {
   .mBody {
@@ -7047,6 +7099,7 @@ iMac 27"           2560x1440 */
 }
 
 .myp-lising-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 960px;
@@ -7101,9 +7154,11 @@ iMac 27"           2560x1440 */
 
 .myp-card-desc {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-items: flex-end;
   justify-content: space-between;
-  width: 580px;
+  width: 664px;
+  /* width: 580px; */
   height: 160px;
   border-radius: 8px;
   padding: 24px;
@@ -7115,6 +7170,81 @@ iMac 27"           2560x1440 */
   margin-top: 6px;
 }
 
+.myp-card-editdelete {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  padding: 24px;
+  color: #000;
+}
+
+.myp-edit-div {
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  background-image: url(images/edit_b.d1bd1690.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
+.myp-lising-card:hover .myp-edit-div {
+  background-image: url(images/edit_o.c9e8188b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
+.myp-lising-card:hover .myp-card-editdelete {
+  color: #fff;
+}
+
+.editdelete {
+  display: flex;
+  width: 54px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 16px;
+  z-index: 15;
+  cursor: pointer;
+}
+
+.editdelete > span {
+  font-size: 14px;
+}
+
+.editdelete:hover {
+  color: #f78915;
+}
+
+.myp-delete-div {
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  background-image: url(images/delete_b.31f66095.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
+.myp-lising-card:hover .myp-delete-div {
+  background-image: url(images/delete_w.0687f573.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
+.myp-delete-div:hover {
+  background-color: #f78915;
+  background-image: url(images/delete_o.b1324d64.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
 .mp-wallpaper {
   position: absolute;
   top: 0;
@@ -7124,12 +7254,11 @@ iMac 27"           2560x1440 */
   z-index: -5;
 }
 
-.deleteDiv {
+/* .deleteDiv {
   height: 74px;
   width: 74px;
   background-color: #c0c0c0;
   color: #000;
-  /* border: #c0c0c0 2px solid; */
   border-radius: 8px;
   cursor: pointer;
 }
@@ -7142,14 +7271,14 @@ iMac 27"           2560x1440 */
 .deleteIcon {
   width: 40px;
   height: 40px;
-  background-image: url(images/delete.f7a7c5c1.png);
+  background-image: url('/assets/img/icon/delete.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px;
 }
 
 .deleteDiv:hover > .deleteIcon {
-  background-image: url(images/delete_w.6fe16872.png);
+  background-image: url('/assets/img/icon/delete_w.png');
 }
 
 .editDiv {
@@ -7169,15 +7298,15 @@ iMac 27"           2560x1440 */
 .editIcon {
   width: 40px;
   height: 40px;
-  background-image: url(images/edit.761075b9.png);
+  background-image: url('/assets/img/icon/edit.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px;
 }
 
 .editDiv:hover > .editIcon {
-  background-image: url(images/edit_w.e7251992.png);
-}
+  background-image: url('/assets/img/icon/edit_w.png');
+} */
 
 .editdeleteLoadingSpinner {
   height: 74px;
