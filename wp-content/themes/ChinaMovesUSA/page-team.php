@@ -69,7 +69,7 @@
       <img class="tm-agent-img" src="<?php echo get_theme_file_uri('/assets/img/agent/chole.png') ?>" alt="">
       <div class="tm-agent-info">
         <div class="tm-agent-infoOne">
-          <p class="tm-agent-maininfo">Chloe Eun</p>
+          <p class="tm-agent-maininfo">Chloe Seulgi Eun</p>
           <p class="tm-agent-subinfo">Licensed Salesperson</p>
         </div>
         <div class="tm-agent-infoTwo">
